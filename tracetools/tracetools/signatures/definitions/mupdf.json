@@ -1,0 +1,1190 @@
+{
+    "group_id": "mupdf",
+    "primary": true,
+    "binary_versions": {
+	"1.18.1": {
+	    "mutool": "2b60971a89c706179be4b49b0d80a191383dfff8e45cc7bc00a67f43ed744698",
+	    "mupdf-x11": "6a9102f110ceac7dff9429d7e9de3ec2ef12ab4cabd1ae7cc957dd341574bd8"
+	},
+	"1.16.0": {
+	    "mutool": "22ee926f9e07d1af3ef9ff9c83374743ff35c4761faef119c093219fe83c0cf6"
+	}
+    },
+    "track_libraries": {
+	"1.18.1": ["libc-2.31.so"],
+	"1.16.0": ["libc-2.31.so"]
+    },
+    "addresses": {
+	"definition_order": ["1.18.1", "1.16.0"],
+	"any": {
+	    "start_xref_keyword": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [641, 630],
+		"kind": "PCEntry"
+	    },
+	    "start_xref_location": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [651, 640],
+		"kind": "PCEntry"
+	    },
+	    "start_xref_missing": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [657, 646],
+		"kind": "PCEntry"
+	    },
+	    "parse_ind_obj": {
+		"function": "pdf_parse_ind_obj",
+		"kind": "begin"
+	    },
+	    "pdf_lex": {
+		"function": "pdf_lex",
+		"kind": "begin"
+	    },
+	    "lex_byte": {
+		"function": "fz_read_byte",
+		"kind": "begin"
+	    },
+	    "parse_dict": {
+		"function": "pdf_parse_dict",
+		"kind": "begin"
+	    },
+	    "parse_array": {
+		"function": "pdf_parse_array",
+		"kind": "begin"
+	    },
+	    "new_name": {
+		"function": "pdf_new_name",
+		"kind": "begin"
+	    },
+	    "new_real": {
+		"function": "pdf_new_real",
+		"kind": "begin"
+	    },
+	    "new_string": {
+		"function": "pdf_new_string",
+		"kind": "begin"
+	    },
+	    "new_int": {
+		"function": "pdf_new_int",
+		"kind": "begin"
+	    },
+	    "new_indirect": {
+		"function": "pdf_new_indirect",
+		"kind": "begin"
+	    },
+	    "dict_key": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_new_name",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 623
+	    },
+	    "dict_val": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_dict_put",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 678
+	    },
+	    "pdf_lex_error:0": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 560,
+		"kind": "PCEntry"
+	    },
+	    "pdf_lex_eof:0": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 547,
+		"kind": "PCEntry"
+	    },
+	    "token_keyword_val": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 500,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": 0
+	    },
+	    "token_from_keyword:0": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 470,
+		"kind": "PCEntry"
+	    },
+	    "token_from_keyword:1": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 473,
+		"kind": "PCEntry"
+	    },
+	    "token_from_keyword:2": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 474,
+		"kind": "PCEntry"
+	    },
+	    "token_from_keyword:3": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 477,
+		"kind": "PCEntry"
+	    },
+	    "token_from_keyword:4": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 480,
+		"kind": "PCEntry"
+	    },
+	    "token_from_keyword:5": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 483,
+		"kind": "PCEntry"
+	    },
+	    "token_from_keyword:6": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 486,
+		"kind": "PCEntry"
+	    },
+	    "token_from_keyword:7": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 487,
+		"kind": "PCEntry"
+	    },
+	    "token_from_keyword:8": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 490,
+		"kind": "PCEntry"
+	    },
+	    "token_from_keyword:9": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 491,
+		"kind": "PCEntry"
+	    },
+	    "token_from_keyword:10": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 494,
+		"kind": "PCEntry"
+	    },
+	    "token_from_keyword:11": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 501,
+		"kind": "PCEntry"
+	    },
+	    "token_from_keyword_keyword": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 498,
+		"kind": "MemEntry",
+		"subtype": "read"
+	    },
+	    "lex_hex_string:0": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 456,
+		"kind": "PCEntry"
+	    },
+	    "lex_hex_string:1": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 461,
+		"kind": "PCEntry"
+	    },
+	    "lex_string": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 411,
+		"kind": "PCEntry"
+	    },
+	    "lex_hex_string_err": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 329,
+		"kind": "PCEntry"
+	    },
+	    "lex_hex_string_val:0": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 440,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": 0
+	    },
+	    "lex_hex_string_val:1": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 452,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": 0
+	    },
+	    "pdf_lex_val:0": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 547,
+		"kind": "PCEntry"
+	    },
+	    "pdf_lex_val:1": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 556,
+		"kind": "PCEntry"
+	    },
+	    "pdf_lex_val:2": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 560,
+		"kind": "PCEntry"
+	    },
+	    "pdf_lex_val:3": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 574,
+		"kind": "PCEntry"
+	    },
+	    "pdf_lex_val:4": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 564,
+		"kind": "PCEntry"
+	    },
+	    "pdf_lex_val:5": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 571,
+		"kind": "PCEntry"
+	    },
+	    "pdf_lex_val:6": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 576,
+		"kind": "PCEntry"
+	    },
+	    "pdf_lex_val:7": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 578,
+		"kind": "PCEntry"
+	    },
+	    "pdf_lex_val:8": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 580,
+		"kind": "PCEntry"
+	    },
+	    "pdf_lex_val:9": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 582,
+		"kind": "PCEntry"
+	    },
+	    "lex_number_keyword": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 215,
+		"kind": "PCEntry"
+	    },
+	    "lex_number_real": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 227,
+		"kind": "PCEntry"
+	    },
+	    "lex_number_real_value": {
+		"path": "source/fitz/string.c",
+		"lineno": 508,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "-0x4"
+	    },
+	    "lex_number_int": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 232,
+		"kind": "PCEntry"
+	    },
+	    "lex_number_val": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 162,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "-0x4"
+	    },
+	    "lex_number_real_acro:0": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 131,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "-0x14"
+	    },
+	    "lex_number_real_acro:1": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 135,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "-0x14"
+	    },
+	    "lex_name_val": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 304,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"ins_type": "mov",
+		"offset": "-0x34"
+	    },
+	    "lex_string_val:0": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 339,
+		"kind": "PCEntry"
+	    },
+	    "lex_string_val:1": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 345,
+		"kind": "PCEntry"
+	    },
+	    "lex_string_val:2": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 354,
+		"kind": "PCEntry"
+	    },
+	    "lex_string_val:4": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 357,
+		"kind": "PCEntry"
+	    },
+	    "lex_string_val:5": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 360,
+		"kind": "PCEntry"
+	    },
+	    "lex_string_val:6": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 363,
+		"kind": "PCEntry"
+	    },
+	    "lex_string_val:7": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 366,
+		"kind": "PCEntry"
+	    },
+	    "lex_string_val:8": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 369,
+		"kind": "PCEntry"
+	    },
+	    "lex_string_val:9": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 372,
+		"kind": "PCEntry"
+	    },
+	    "lex_string_val:10": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 375,
+		"kind": "PCEntry"
+	    },
+	    "lex_string_val:11": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 391,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "-0x18"
+	    },
+	    "lex_string_val:12": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 401,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "-0x14"
+	    },
+	    "lex_string_val:13": {
+		"path": "source/pdf/pdf-lex.c",
+		"lineno": 405,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "-0x14"
+	    },
+	    "dict_lex_key": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex",
+		"field": "pc",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 611
+	    },
+	    "dict_check_end": {
+		"kind": "PCEntry",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 613
+	    },
+	    "dict_check_id_tok": {
+		"kind": "PCEntry",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 617
+	    },
+	    "dict_lex_value": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex",
+		"field": "pc",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 625
+	    },
+	    "dict_put_int": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_dict_put",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 656
+	    },
+	    "dict_lex_int:0": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex",
+		"field": "pc",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 647
+	    },
+	    "dict_lex_int:1": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex",
+		"field": "pc",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 662
+	    },
+	    "dict_int_null:0": {
+		"kind": "PCEntry",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 670
+	    },
+	    "dict_int_null:1": {
+		"kind": "PCEntry",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 674
+	    },
+
+	    "dict_new_value_error": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_drop_obj",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 687
+	    },
+	    "array_lex": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex",
+
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 506
+	    },
+	    "array_push_int:0": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_array_push_int",
+		"field": "pc",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 511
+	    },
+	    "array_push_int:1": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_array_push_int",
+		"path": "source/pdf/pdf-parse.c",
+		"field": "pc",
+		"lineno": 513
+	    },
+	    "array_push_int:2": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_array_push_int",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 519
+	    },
+	    "array_push_bool:0": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_array_push_bool",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 568
+	    },
+	    "array_push_bool:1": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_array_push_bool",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 571
+	    },
+	    "array_int_a": {
+		"kind": "PCEntry",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 535
+	    },
+	    "array_int_b": {
+		"kind": "PCEntry",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 537
+	    },
+	    "array_push:0": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_array_push",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 574
+	    },
+	    "array_push:1": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_array_push",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 578
+	    },
+	    "array_push_drop:0": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_array_push_drop",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 544
+	    },
+	    "array_push_drop:1": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_array_push_drop",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 550
+	    },
+	    "array_push_drop:2": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_array_push_drop",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 555
+	    },
+	    "array_catch": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_drop_obj",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 587
+	    },
+	    "array_push_string": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_array_push_string",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 565
+	    },
+	    "array_push_real": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_array_push_real",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 562
+	    },
+	    "array_push_name": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_array_push_name",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 559
+	    },
+
+	    "new_name_val": {
+		"path": "source/pdf/pdf-object.c",
+		"lineno": 167,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "-0x10"
+	    },
+	    "new_indirect_val:0": {
+		"path": "source/pdf/pdf-object.c",
+		"lineno": 191,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "-0x24"
+
+	    },
+	    "new_indirect_val:1": {
+		"path": "source/pdf/pdf-object.c",
+		"lineno": 192,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "-0x28"
+	    },
+	    "new_int_val": {
+		"path": "source/pdf/pdf-object.c",
+		"lineno": 116,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "-0x20"
+	    },
+	    "new_real_val": {
+		"path": "source/pdf/pdf-object.c",
+		"lineno": 128,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "-0x1c"
+	    },
+	    "parse_ind_obj_lex:0": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex",
+		"field": "pc",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 733
+	    },
+	    "parse_ind_obj_lex:1": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex",
+		"field": "pc",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 744
+	    },
+	    "parse_ind_obj_lex:2": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex",
+		"field": "pc",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 753
+	    },
+	    "parse_ind_obj_lex:3": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex",
+		"field": "pc",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 761
+	    },
+	    "parse_ind_obj_lex:4": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex",
+		"field": "pc",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 782
+	    },
+	    "parse_ind_obj_lex:5": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex",
+		"field": "pc",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 793
+	    },
+	    "parse_ind_obj_lex:6": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex",
+		"field": "pc",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 814
+	    },
+	    "parse_ind_obj_byte:0": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"field": "pc",
+
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 818
+	    },
+	    "parse_ind_obj_byte:1": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"field": "pc",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 820
+	    },
+	    "parse_ind_obj_byte:2": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"field": "pc",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 827
+	    },
+	    "parse_ind_obj_peek": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"field": "pc",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 823
+	    },
+	    "parse_ind_obj_catch": {
+		"kind": "PCEntry",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 843
+	    },
+	    "stream_in_text_array": {
+		"kind": "PCEntry",
+		"path": "source/pdf/pdf-interpret.c",
+		"lineno": 832
+	    },
+	    "test": {
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex",
+		"field": "target_addr",
+		"path": "source/pdf/pdf-parse.c",
+		"lineno": 611
+	    },
+	    "repair_xref_tok": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 376,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_xref_tok_obj_repair": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 417,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_xref_shift_int": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 403,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_xref_shift_gen_val": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 406,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_xref_tok_eof": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 385,
+		"kind": "PCEntry"
+	    },
+	    "repair_xref_reset:0": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 399,
+		"kind": "PCEntry"
+	    },
+	    "repair_xref_reset:1": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 525,
+		"kind": "PCEntry"
+	    },
+	    "repair_xref_entry:0": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 556,
+		"kind": "MemEntry",
+		"ins_type": "mov",
+		"subtype": "read"
+	    },
+	    "repair_xref_entry:1": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 560,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_xref_entry:2": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 561,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_xref_entry:3": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 562,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_xref_entry:4": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 564,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_xref_stream_len": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 574,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_xref_free:0": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 594,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"ins_type": "cmp"
+	    },
+	    "repair_xref_free:1": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 599,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_xref_free:2": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 601,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_xref_gen_clamp": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 443,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_xref_list_num": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 451,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_xref_list_gen": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 452,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_xref_list_ofs": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 453,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_xref_list_stm_ofs": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 454,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_xref_list_stm_len": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 455,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_xref_list_index": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 456,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_xref_encrypt": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 491,
+		"kind": "CallEntry",
+		"subtype": "ret",
+		"target": "pdf_keep_obj"
+	    },
+	    "repair_xref_id": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 498,
+		"kind": "CallEntry",
+		"subtype": "ret",
+		"target": "pdf_keep_obj"
+	    },
+	    "repair_xref_info": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 509,
+		"kind": "CallEntry",
+		"subtype": "ret",
+		"target": "pdf_keep_obj"
+	    },
+	    "repair_obj_id": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 95,
+		"kind": "CallEntry",
+		"subtype": "ret",
+		"target": "pdf_keep_obj"
+	    },
+	    "repair_obj_root": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 99,
+		"kind": "CallEntry",
+		"subtype": "ret",
+		"target": "pdf_keep_obj"
+	    },
+
+	    "repair_obj_tok:0": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 47,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex"
+	    },
+	    "repair_obj_tok:1": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 129,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex"
+	    },
+	    "repair_obj_tok:1": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 150,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex"
+	    },
+	    "repair_obj_tok:2": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 189,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex"
+	    },
+	    "repair_obj_encrypt": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 84,
+		"kind": "CallEntry",
+		"subtype": "ret",
+		"target": "pdf_keep_obj"
+	    },
+	    "repair_obj_root": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 99,
+		"kind": "CallEntry",
+		"subtype": "ret",
+		"target": "pdf_keep_obj"
+	    },
+
+	    "repair_obj_page": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 113,
+		"kind": "CallEntry",
+		"subtype": "ret",
+		"target": "pdf_keep_obj"
+	    },
+	    "repair_obj_stmoff": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 141,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "repair_obj_stmlen": {
+		"path": "source/pdf/pdf-repair.c",
+		"lineno": 174,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "read_start_xref_start": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [641, 630],
+		"kind": "PCEntry"
+	    },
+	    "read_start_xref_offset": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [641, 630],
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "read_start_xref_missing": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [657, 646],
+		"kind": "PCEntry"
+	    },
+	    "process_stream_num": {
+		"path": "source/pdf/pdf-stream.c",
+		"lineno": 680,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "parse_xref_size_len": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [723, 712],
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "parse_xref_size_tok:0": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [756, 745],
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex"
+	    },
+	    "parse_xref_size_tok:1": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [760, 749],
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex"
+	    },
+	    "parse_xref_size_trailer": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [764, 753],
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_parse_dict"
+	    },
+	    "parse_xref_start": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [867, 856],
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "parse_xref_len": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [868, 857],
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "parse_xref_entry_num": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [908, 897],
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "parse_xref_entry_offset": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [917, 906],
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0x8"
+	    },
+	    "parse_xref_entry_gen": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [924, 913],
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": 0
+	    },
+	    "parse_xref_entry_type": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [930, 919],
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": 0
+	    },
+	    "parse_xref_trailer": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [952, 941],
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_parse_dict"
+	    },
+	    "parse_xref_lex:0": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [942, 931],
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex"
+	    },
+	    "parse_xref_lex:1": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [946, 935],
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_lex"
+	    },
+	    "parse_new_xref_entry_type": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [985, 974],
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "parse_new_xref_entry_ofs": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [986, 975],
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "parse_new_xref_entry_gen": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [987, 976],
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "parse_new_xref_entry_num": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [988, 977],
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "pdf_cache_obj_num": {
+		"path": "source/pdf/pdf-xref.c",
+		"lineno": [2027, 1980],
+		"kind": "MemEntry",
+		"subtype": "read",
+		"ins_type": "cmp"
+	    },
+	    "process_stream_drop_last_arg": {
+		"path": "source/pdf/pdf-interpret.c",
+		"lineno": 858,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_array_delete"
+	    },
+	    "process_stream_drop_args:0": {
+		"path": "source/pdf/pdf-interpret.c",
+		"lineno": 878,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_drop_obj"
+	    },
+	    "process_stream_drop_args:1": {
+		"path": "source/pdf/pdf-interpret.c",
+		"lineno": 895,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_drop_obj"
+	    },
+	    "process_stream_drop_args:2": {
+		"path": "source/pdf/pdf-interpret.c",
+		"lineno": 904,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_drop_obj"
+	    },
+	    "process_stream_drop_args:3": {
+		"path": "source/pdf/pdf-interpret.c",
+		"lineno": 940,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_drop_obj"
+	    },
+	    "process_stream_drop_args:4": {
+		"path": "source/pdf/pdf-interpret.c",
+		"lineno": 884,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_new_array"
+	    },
+
+	    "process_stream_set_args:0": {
+		"path": "source/pdf/pdf-interpret.c",
+		"lineno": 888,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_parse_array"
+	    },
+	    "process_stream_set_args:1": {
+		"path": "source/pdf/pdf-interpret.c",
+		"lineno": 898,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_parse_dict"
+	    },
+	    "process_stream_set_args:2": {
+		"path": "source/pdf/pdf-interpret.c",
+		"lineno": 906,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_new_name"
+	    },
+	    "process_stream_set_args:3": {
+		"path": "source/pdf/pdf-interpret.c",
+		"lineno": 943,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "pdf_new_string"
+	    },
+	    "process_stream_push_stack:0": {
+		"path": "source/pdf/pdf-interpret.c",
+		"lineno": 914,
+		"kind": "PCEntry"
+	    },
+	    "process_stream_push_stack:1": {
+		"path": "source/pdf/pdf-interpret.c",
+		"lineno": 924,
+		"kind": "PCEntry"
+	    },
+	    "process_stream_push_stack:2": {
+		"path": "source/pdf/pdf-interpret.c",
+		"lineno": 857,
+		"kind": "PCEntry"
+	    },
+	    "process_stream_set_name": {
+		"path": "source/pdf/pdf-interpret.c",
+		"lineno": 909,
+		"kind": "PCEntry"
+	    },
+	    "process_stream_set_string": {
+		"path": "source/pdf/pdf-interpret.c",
+		"lineno": 933,
+		"kind": "PCEntry"
+	    },
+	    "load_chapter_num": {
+		"path": "source/fitz/document.c",
+		"lineno": 513,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "-0x28"
+	    },
+	    "load_page_num": {
+		"path": "source/fitz/document.c",
+		"lineno": 513,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "-0x24"
+	    }
+	}
+    }
+}

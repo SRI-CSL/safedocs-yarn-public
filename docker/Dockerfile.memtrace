@@ -1,0 +1,202 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2022 Narf Industries LLC
+# This material is based upon work supported by the Defense Advanced Research Projects Agency (DARPA) under Contract No. HR001119C0074.
+FROM ubuntu:20.04 as mr_memtrace
+
+ENV DEBIAN_FRONTEND noninteractive
+
+# general dependencies. Get specific libc version since signature stuff
+# requires specific libc.so binary
+RUN apt-get update && \
+    apt-get install -y \
+    build-essential \
+    cmake \
+    curl \
+    pkg-config \
+    qt5-default \
+    sudo \
+    unzip
+
+RUN groupadd user && \
+    useradd --no-log-init -g user user && usermod -aG sudo user && \
+    cp /etc/sudoers /etc/sudoers.orig && \
+    echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers && \
+    mkdir -p /home/user && chown -R user:user /home/user
+
+
+# dependencies for dynamorio
+WORKDIR /opt
+RUN curl -L -q https://github.com/DynamoRIO/dynamorio/releases/download/cronbuild-8.0.18684/DynamoRIO-Linux-8.0.18684.tar.gz | tar -xz && \
+    curl -L -q https://github.com/DynamoRIO/dynamorio/archive/cronbuild-8.0.18684.tar.gz | tar -xz && \
+    ln -s /opt/DynamoRIO-Linux-8.0.18684 /opt/dynamorio && \
+    ln -s /opt/dynamorio-cronbuild-8.0.18684 /dynamorio_package
+WORKDIR /processor
+COPY --chown=user:user README.md *.sh *.py ./
+WORKDIR /processor/instrumentation
+COPY --chown=user:user instrumentation/*.c instrumentation/*.h \
+     instrumentation/*.txt instrumentation/Makefile ./
+
+RUN chown -R user /processor/instrumentation
+
+USER user
+
+RUN make && \
+    sudo cp -r ./build /build && \
+    sudo mkdir /results && \
+    sudo chown -R user /build /results
+
+
+ENV MR_PA_SUBPROCESS_TIMEOUT None
+
+##################
+
+FROM mr_memtrace as mr_memtrace-analysis
+
+# pypy install
+RUN sudo apt-get install -y \
+    clang \
+    elfutils \
+    git \
+    libbz2-dev \
+    libclang1-10 \
+    libclang-10-dev \
+    libffi-dev \
+    libgmp-dev \
+    liblzma-dev \
+    libncurses5-dev \
+    libncursesw5-dev \
+    libnss3 \
+    libopenjp2-7 \
+    libpaper-dev \
+    libpng-dev \
+    libreadline-dev \
+    libsqlite3-dev \
+    libssl-dev \
+    llvm \
+    pypy3 \
+    pypy3-dev \
+    python-openssl \
+    python3-pip \
+    tk-dev \
+    zlib1g-dev \
+    xz-utils
+
+# setup pyenv
+WORKDIR /home/user
+RUN git clone https://github.com/pyenv/pyenv.git .pyenv
+ENV HOME /home/user
+ENV PYENV_ROOT $HOME/.pyenv
+ENV PATH $PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH
+RUN echo 'pyenv 1>/dev/null 2>&1 && eval "$(pyenv init -)"' >> ~/.bashrc
+RUN eval "$(pyenv init -)"
+ENV PYPY pypy3.7-7.3.3
+ENV CPY 3.8.5
+
+# install pypy
+RUN pyenv install $PYPY && eval "$(pyenv init -)" && pyenv global $PYPY && \
+    pypy3 -m pip install \
+    aenum  \
+    capstone \
+    clang  \
+    cxxfilt \
+    intervaltree \
+    ipython \
+    pyelftools
+
+# also installl regular python
+RUN pyenv install $CPY && pyenv global $CPY && \
+    python3 -m pip install \
+    aenum  \
+    capstone \
+    clang==10.0.1 \
+    cxxfilt \
+    intervaltree \
+    ipython \
+    pyelftools
+
+
+# Install binja
+# copy but don't fail if binja archive or license do not exist
+COPY ./docker/install_binja.sh /
+COPY ./third-party/binaryninja /binaryninja
+WORKDIR /binaryninja
+RUN /install_binja.sh && sudo rm /install_binja.sh
+
+# install quicksect
+COPY --chown=user:user tracetools /processor/tracetools
+WORKDIR /opt
+RUN curl -L -q https://github.com/brentp/quicksect/archive/refs/tags/v0.2.2.tar.gz | sudo tar -xz && \
+    sudo mv quicksect-0.2.2 quicksect && \
+    sudo chown -R user quicksect
+
+COPY ./tracetools/quicksect.patch /
+WORKDIR /opt/quicksect
+RUN patch -p 1 -l < /quicksect.patch && sudo rm /quicksect.patch
+
+RUN pyenv global $CPY && python3 setup.py install && \
+    pyenv global $PYPY && pypy3 setup.py install
+
+# install tracetools in both pyenvs
+WORKDIR /processor/tracetools
+RUN pyenv global $CPY && \
+    python3 setup.py develop && \
+    pyenv global $PYPY && \
+    pypy3 setup.py develop
+
+ENV PYTHONUNBUFFERED true
+
+###############
+
+FROM mr_memtrace-analysis as mr_memtrace-analysis-dev
+WORKDIR /processor
+
+# add repos for debug symbol packages
+# for now skipping:
+#    deb http://ddebs.ubuntu.com focal-updates main restricted universe multiverse
+#    deb http://ddebs.ubuntu.com focal-proposed main restricted universe multiverse
+
+RUN sudo apt-get install -y ubuntu-dbgsym-keyring && \
+    echo "deb http://ddebs.ubuntu.com focal main restricted universe multiverse" | sudo tee /etc/apt/sources.list.d/ddebs.list && \
+    sudo apt-get update && \
+    sudo apt-get install -y \
+    	 libcairo2-dbgsym \
+	 libjpeg-turbo8-dbg
+
+COPY parsers/libc-2.31.so parsers/LICENSE.libc /opt/
+COPY --chown=user:user parsers parsers
+COPY --chown=user:user parser-settings parser-settings
+COPY --chown=user:user schema schema
+COPY docker/install_parser.sh /
+
+
+# xpdf
+RUN sudo /install_parser.sh xpdf-4.01.01_build xpdf-4.01.01
+
+# try to install four versions of poppler
+RUN sudo /install_parser.sh poppler202003eval_build sri-build
+RUN sudo /install_parser.sh poppler0840_build build
+RUN sudo /install_parser.sh poppler-polytracker_build build
+RUN sudo /install_parser.sh poppler-eval1_sri_build build
+
+# install mupdf
+RUN sudo /install_parser.sh mupdf-1.18.0_build .
+
+# DDS slideshow
+RUN sudo /install_parser.sh dds-slideshow_build .
+
+# to recover some disk space
+RUN sudo rm -rf /processor/parsers /install_parser.sh
+
+# in case of uid mismatch, make /home/user/.pyenv/version world rwx
+# so that pyenv can propertly function
+RUN chmod -R 777 /home/user/.pyenv/version
+
+# set default global pyenv to python3
+RUN pyenv global $CPY
+
+RUN sudo chown user /processor
+# remove sudo access for user
+RUN sudo mv /etc/sudoers.orig /etc/sudoers
+
+ENV PYTHONUNBUFFERED true
+CMD ["/bin/bash"]

@@ -1,0 +1,85 @@
+{
+    "name": "poppler",
+    "version": "0.6",
+    "input_type": "pdf",
+    "timeout": 91,
+    "versions": {
+	"0840": {
+	    "root_dir": "/opt/poppler0840_build",
+	    "src": "/opt/src/poppler0840",
+	    "bins": {
+		"pdftops": {
+		    "path": "utils/pdftops",
+		    "timeout": 93
+		},
+		"pdf-fullrewrite": {
+		    "path": "test/pdf-fullrewrite"
+		},
+		"pdftocairo": {
+		    "path": "utils/pdftocairo"
+		},
+		"pdffonts": {
+		    "path": "utils/pdffonts"
+		},
+		"pdftoppm": {
+		    "path": "utils/pdftoppm"
+		},
+		"pdftotext": {
+		    "path": "utils/pdftotext"
+		},
+		"pdftotext-decrypt-user": {
+		    "path": "utils/pdftotext"
+		},
+		"pdftotext-decrypt-owner": {
+		    "path": "utils/pdftotext"
+		},
+		"pdfsig": {
+		    "path": "utils/pdfsig"
+		}
+	    },
+	    "environ": {
+		"TEST_ENV": "0840"
+	    }
+	},
+	"eval1_sri": {
+	    "root_dir": "/opt/poppler-eval1_sri_build",
+	    "src": "/opt/src/poppler0840",
+	    "bins": {
+		"pdftops": {
+		    "path": "utils/pdftops"
+		}
+	    },
+	    "environ": {
+		"TEST_ENV": "eval1_sri"
+	    }
+	}
+    },
+    "environ": {
+	"LD_LIBRARY_PATH": "{root_dir}",
+	"NOMAD_META_MR_MT_ENABLE_LOG": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib,_ZN7GooFile4openEPK9GooString,_ZN6Parser6getObjEi,mmap,munmap,open,openat,read,readv,pread64,close,munmap,_ZN6ParserC2EP4XRefP6Objectb,_ZN6ParserC2EP4XRefP6Streamb,_ZN4XRef13constructXRefEPbb,_ZN4XRef8readXRefEPxPSt6vectorIxSaIxEEPS1_IiSaIiEE,_ZN4XRef5fetchEiii,_ZN3Gfx2goEb",
+	"NOMAD_META_MR_MT_DISABLE_LOG": "printf,fprintf,parseArgs,_Z5error13ErrorCategoryxPKcz,_ZN6PDFDoc11ErrorPDFDocEiPK9GooString,fstat,_ZNSt11unique_lockISt15recursive_mutexED1Ev,_ZNSt11unique_lockISt15recursive_mutexEC1ERS0_,_ZNSt15recursive_mutexC1Ev,_ZN12_GLOBAL__N_14mtimERK4stat"
+    },
+    "bins": {
+	"pdftops": {
+	    "parser_args": "{in_file} out.ps"
+	},
+	"pdftotext": {
+	    "parser_args": "{in_file} out.txt"
+	},
+	"pdftotext-decrypt-user": {
+	    "parser_args": "-upw user {in_file} out.txt"
+	},
+	"pdftotext-decrypt-owner": {
+	    "parser_args": "-opw owner {in_file} out.txt"
+	},
+	"pdftocairo": {
+	    "parser_args": "-png {in_file} out",
+	    "environ": {
+		"NOMAD_META_MR_MT_ENABLE_LOG": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib,_ZN7GooFile4openEPK9GooString,_ZN6Parser6getObjEi,mmap,munmap,open,openat,read,readv,pread64,close,munmap,_ZN6ParserC2EP4XRefP6Objectb,_ZN6ParserC2EP4XRefP6Streamb,_ZN9DCTStreamC1EP6StreamiP4Dicti,_ZN4XRef8readXRefEPxPSt6vectorIxSaIxEEPS1_IiSaIiEE,_ZN4XRef5fetchEiii,_ZN3Gfx2goEb,_ZN3Gfx7displayEP6Objectb,_ZN4XRef13constructXRefEPbb"
+	    }
+	},
+	"pdf-fullrewrite": {
+	    "parser_args": "{in_file} out.pdf"
+	}
+    }
+}

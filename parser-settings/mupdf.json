@@ -1,0 +1,63 @@
+{
+    "name": "mupdf",
+    "input_type": "pdf",
+    "timeout": 91,
+    "versions": {
+	"1.18.0": {
+	    "root_dir": "/opt/mupdf-1.18.0",
+	    "src": "",
+	    "bins": {
+		"mutool": {
+		    "path": "mutool"
+		},
+		"mutops": {
+		    "path": "mutool"
+		},
+		"mutotext": {
+		    "path": "mutool"
+		},
+		"muclean": {
+		    "path": "mutool"
+		},
+		"mutotext-decrypt-user": {
+		    "path": "mutool"
+		},
+		"mutotext-decrypt-owner": {
+		    "path": "mutool"
+		},
+		"mupdf-x11": {
+		    "path": "mupdf-x11"
+		}
+	    }
+	}
+    },
+    "environ": {
+	"LD_LIBRARY_PATH": "{root_dir}",
+	"NOMAD_META_MR_MT_ENABLE_LOG": "mmap,munmap,open,openat,read,readv,pread64,close,pdf_init_document,writeobjects,pdf_dict_get,pdf_parse_stm_obj,pdf_parse_ind_obj,pdf_repair_xref,pdf_read_start_xref,pdf_xref_size_from_old_trailer,pdf_parse_dict,pdf_read_xref,pdf_obj_read,pdf_process_contents,pdf_cache_object,fz_load_chapter_page",
+	"NOMAD_META_MR_MT_DISABLE_LOG": "printf,fprintf,fstat"
+    },
+    "bins": {
+	"mutool": {
+	    "parser_args": "clean -s -ggg {in_file} out.pdf"
+	},
+	"mutops": {
+	    "parser_args": "convert -F ps -o out.ps {in_file}"
+	},
+	"muclean": {
+	    "parser_args": "clean -s -d {in_file} out.pdf",
+	    "copy": ["out.pdf"]
+	},
+	"mutotext": {
+	    "parser_args": "convert -F txt -o out.txt {in_file}"
+	},
+	"mutotext-decrypt-user": {
+	    "parser_args": "convert -p user -F txt -o out.txt {in_file}"
+	},
+	"mutotext-decrypt-owner": {
+	    "parser_args": "convert -p owner -F txt -o out.txt {in_file}"
+	},
+	"mupdf-x11": {
+	    "parser_args": "{in_file}"
+	}
+    }
+}

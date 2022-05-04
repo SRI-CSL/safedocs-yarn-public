@@ -1,0 +1,1392 @@
+{
+    "group_id": "poppler",
+    "primary": true,
+    "input_type": "pdf",
+    "binary_versions": {
+	"eval1_sri": {
+	    "libpoppler.so.94": "87780618c9784264dbdfc35cfc5b260a8d22b0436788b7da7b0012e053fe2207",
+	    "pdftops": "f9f7026bf86b25da5238d39411adff23ffa97cf6d72a83e02dc318e677d42a90",
+	    "pdfattach": "96ccc3bd6e10f1d142ddad1ac9645e83ae6dda1bce6e830b1e8c7c73cbd4347b",
+	    "pdfdetach": "2896b6698baac8e4ec410057d9e5afdc924accd3a0de8282ac8ce72afce91c89",
+	    "pdffonts": "2cc39141c1f866da3c25fd2029dc8d899d3faf60d3d7ff4ea649e164de572921",
+	    "pdfimages": "bd91770e8e7a88ad400d6dd0609f26640fcaa6c5d2b52f070773adfbb274a255",
+	    "pdfinfo": "8d06f48147ac90309963eb20c9144d17f22a3c733b585051ed390df5c450f657",
+	    "pdfseparate": "76966ebf4b5359f210a8f97a9313fc85495566ac29611f5f96cba6288db10d07",
+	    "pdfsig": "2ee64701c2dbde8c933e1c9e4e16020ef0a9a05867021608f86f1058ffce713f",
+	    "pdftocairo": "91ee5faea2a9a948c7092f871d7345a1c046c7c827aaa9b1344d44b4c0551e1f",
+	    "pdftohtml": "166a3aa544dd1983093eba83827389df0e4539c6e1cb5daaa04b45afee3ed870",
+	    "pdftoppm": "a009ab900ec932a542dab1f520ed67d6e62d1125ef55131eb50017e6780315a4",
+	    "pdftotext": "56d8b47d2911411b39d54e54d779a6078c5ebbfac789020bf0a8bd8da7172a8d",
+	    "pdfunite": "4280587d374133d2811f787964f7c84f06dfbdd510d6d0d232f26783e52698fd"
+	},
+	"0840": {
+	    "libpoppler.so.94": "0cf7d5acfb29e8b2c8d101e8ffb4189c9642f802caecd704eb4f096dcdafa881",
+	    "pdftops": "2ee8c7b6a3ae34b95c3bf587c91b3e533043bd5d0ae1b9e30d53c9f4abdb74ef",
+	    "pdfattach": "373011530be3641256258718210fd4cb686354ff460987a13b024ea7b275070a",
+	    "pdfdetach": "3c2b9449eef05cc4dc9f1c855cbbf91019be7a7ed484779a4f45e9526b8b1849",
+	    "pdffonts": "e3d5385a49a3ff8e156dc0fa64e1dcb1392973e7c0aac73326759e919cb56246",
+	    "pdfimages": "18c48fa926906057c23b6869814dee2bf86a88923441e262597c7c73301bf12e",
+	    "pdfinfo": "ad96ad711a9a962de7c67d6334451be528922634724fc60b5ac4e66d0043bec5",
+	    "pdfseparate": "e2ea3d157b9f1e129602d281223241bdd9c1258b96c7c402e3967393d8b6fcec",
+	    "pdfsig": "9470a1d464b4a8f4c0decebde0c542763df1694381392eb3ff41158d49157b49",
+	    "pdftocairo": "c58e3f9ad25d498612c5d895ebf1164ec3b34adbd98497e41a42a694d21f1501",
+	    "pdftohtml": "ad297a4c2f89da823921d567e2a074fb495aabc7abce2bf3619e7a97a02d97d4",
+	    "pdftoppm": "408e263bdb3a1583398239d0d6657f1572ab6205b3772dca00d67f48b7da2914",
+	    "pdftotext": "212ca9a13d0d14ab8d311aff9b7310e21a242403da3a59a79be3299fb637fb67",
+	    "pdfunite": "0a5ee6c4d90658cc93ae448a83cc216f15977312267143d60a9291fd189ad903",
+	    "pdf-fullrewrite": "d4450a83adafd6a1aede13518d1da6b08597ba06bfa8bdd68bc84d42a081f267"
+	}
+    },
+    "track_libraries": {
+	"eval1_sri": ["libpoppler.so.94"],
+	"0840": ["libpoppler.so.94", "libjpeg.so.8.2.2", "libcairo.so.2.11600.0"]
+    },
+    "addresses": {
+	"definition_order": ["eval1_sri", "0840"],
+	"build_src_root": ["/builds/poppler-0.84.0", "/home/user/code/poppler"],
+	"libpoppler.so.94": {
+	    "dict_recurse_pc": {
+		"path": "poppler/Parser.cc",
+		"lineno": 123,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc",
+		"addresses": ["0x2bb434", "0x370513"]
+	    },
+	    "array_recurse_pc": {
+		"path": "poppler/Parser.cc",
+		"lineno": 96,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc",
+		"addresses": ["0x2bb2a0", "0x3701f1"]
+
+	    },
+	    "unknown_container_pc": {
+		"path": "poppler/Parser.cc",
+		"lineno": 65,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc",
+		"addresses": ["0x2bb7c1", "0x36ff53"]
+	    },
+	    "xref_check": {
+		"path": "poppler/XRef.cc",
+		"lineno": 465,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc",
+		"addresses": ["0x2ee0cf", "0x3c361f"]
+	    },
+	    "gfx_go_start": {
+		"function": "_ZN3Gfx2goEb",
+		"kind": "begin",
+		"addresses": ["0x273734", "0x2e932e"]
+	    },
+	    "gfx_go_end": {
+		"function": "_ZN3Gfx2goEb",
+		"kind": "end",
+		"addresses": ["0x273c2e", "0x2e9a34"]
+	    },
+	    "gfx_build_image_stream_start": {
+		"function": "_ZN3Gfx16buildImageStreamEv",
+		"kind": "begin",
+		"addresses": ["0x26f068", "0x300f42"]
+	    },
+	    "gfx_build_image_stream_end": {
+		"function": "_ZN3Gfx16buildImageStreamEv",
+		"kind": "end",
+		"addresses": ["0x26f2fd", "0x30128c"]
+	    },
+	    "parse_xref_entry_start": {
+		"function": "_ZN4XRef10parseEntryExP9XRefEntry",
+		"kind": "begin",
+		"addresses": ["0x2ec21e", "0x3c79b4"]
+	    },
+	    "parse_xref_entry_end": {
+		"function": "_ZN4XRef10parseEntryExP9XRefEntry",
+		"kind": "end",
+		"addresses": ["0x2ec523", "0x3c7dae"]
+	    },
+	    "getint_call_virtpcs:0": {
+		"path": "poppler/Parser.cc",
+		"lineno": 150,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZNK6Object6getIntEv",
+		"field": "pc",
+		"addresses": ["0x2bb650", "0x37072b"]
+	    },
+	    "getint_call_virtpcs:1": {
+		"path": "poppler/Parser.cc",
+		"lineno": 153,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZNK6Object6getIntEv",
+		"field": "pc",
+		"addresses": ["0x2bb69b", "0x3707a7"]
+	    },
+	    "memread_virtpc": {
+		"path": "poppler/Object.h",
+		"lineno": 244,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "0x8",
+		"function": "_ZNK6Object6getIntEv",
+		"addresses": ["0x23f631", "0x2a0a31"]
+	    },
+	    "lexergetobj1": {
+		"path": "poppler/Parser.cc",
+		"lineno": 333,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN5Lexer6getObjEi",
+		"field": "pc",
+		"addresses": ["0x2baa05", "0x3711b8"]
+	    },
+	    "lexergetobj2": {
+		"path": "poppler/Parser.cc",
+		"lineno": 354,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN5Lexer6getObjEi",
+		"field": "pc",
+		"addresses": ["0x2bab3a", "0x371317"]
+	    },
+	    "lexergetobj3": {
+		"path": "poppler/Parser.cc",
+		"lineno": 356,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN5Lexer6getObjEPKci",
+		"field": "pc",
+		"addresses": ["0x2baab2", "0x371356"]
+	    },
+	    "lexergetobj_inlineimg1": {
+		"path": "poppler/Parser.cc",
+		"lineno": 82,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN5Lexer6getObjEi",
+		"field": "pc",
+		"addresses": ["0x2bb1b4", "0x370005"]
+	    },
+	    "lexergetobj_inlineimg2": {
+		"path": "poppler/Parser.cc",
+		"lineno": 83,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN5Lexer6getObjEi",
+		"field": "pc",
+		"addresses": ["0x2bb1db", "0x370049"]
+	    },
+	    "obj_id_0": {
+		"path": "poppler/Parser.cc",
+		"lineno": 317,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "0xe0",
+		"addresses": ["0x2ba960",  "0x3710e2"]
+	    },
+	    "obj_id_1": {
+		"path": "poppler/Parser.cc",
+		"lineno": 338,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "0xe0",
+		"addresses": ["0x2baa49", "0x371220"]
+	    },
+	    "parser_obj_id": {
+		"path": "poppler/Parser.cc",
+		"lineno": 81,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "0xe0",
+		"addresses": ["0x2bb00a", "0x36ffe0"]
+	    },
+	    "recursion_error": {
+		"path": "poppler/Parser.cc",
+		"lineno": 88,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6ObjectC1E7ObjType",
+		"field": "pc",
+		"addresses": ["0x2bb20e", "0x3700a0"]
+	    },
+	    "dict_start_shift": {
+		"path": "poppler/Parser.cc",
+		"lineno": 108,
+		"kind": "PCEntry",
+		"field": "pc",
+		"addresses": ["0x2bb358", "0x3702e8"]
+	    },
+	    "dict_start_obj": {
+		"path": "poppler/Parser.cc",
+		"lineno": 109,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN4DictC1EP4XRef",
+		"field": "pc",
+		"addresses": ["0x2bb385", "0x37031f"]
+	    },
+	    "array_start": {
+		"path": "poppler/Parser.cc",
+		"lineno": 93,
+		"kind": "PCEntry",
+		"field": "pc"
+	    },
+	    "array_end": {
+		"path": "poppler/Parser.cc",
+		"lineno": 104,
+		"kind": "PCEntry",
+		"field": "pc",
+		"addresses": ["0x2bb346", "0x37028d"]
+	    },
+	    "array_end_eof": {
+		"path": "poppler/Parser.cc",
+		"lineno": 101,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getPosEv",
+		"field": "pc",
+		"addresses": ["0x2bb31f", "0x370262"]
+	    },
+	    "array_end_recursion_error": {
+		"path": "poppler/Parser.cc",
+		"lineno": 196,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6ObjectC1E7ObjType",
+		"field": "pc",
+		"addresses": ["0x2bb61f", "0x370aa4"]
+	    },
+	    "simple_obj": {
+		"path": "poppler/Parser.cc",
+		"lineno": 189,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZSt4moveIR6ObjectEONSt16remove_referenceIT_E4typeEOS3_",
+		"field": "pc",
+		"addresses": ["0x2bb6ec", "0x370a48"]
+	    },
+	    "getobj_int": {
+		"path": "poppler/Parser.cc",
+		"lineno": 150,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZNK6Object6getIntEv",
+		"field": "pc",
+		"addresses": ["0x2bb650", "0x37072b"]
+	    },
+	    "getobj_ref": {
+		"path": "poppler/Parser.cc",
+		"lineno": 164,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6ObjectC1E3Ref",
+		"field": "pc",
+		"addresses": ["0x2bb6d8", "0x370823"]
+	    },
+	    "obj_type": {
+		"path": "poppler/Object.h",
+		"lineno": 240,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": 0,
+		"addresses": ["0x27bbf6", "0x30323a"]
+	    },
+	    "obj_type_iscmd:0": {
+		"path": "poppler/Parser.cc",
+		"lineno": 325,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target":"_ZNK6Object5isCmdEPKc",
+		"field": "pc",
+		"addresses":  ["0x2ba9dc", "0x371138"]
+	    },
+	    "obj_type_iscmd:1": {
+		"path": "poppler/Parser.cc",
+		"lineno": 346,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target":"_ZNK6Object5isCmdEPKc",
+		"field": "pc",
+		"addresses": ["0x2baae5", "0x371276"]
+	    },
+	    "copystr_call": {
+		"path": "poppler/Object.h",
+		"lineno": 172,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target":"_Z10copyStringPKc",
+		"field": "pc",
+		"addresses": ["0x23f276", "0x2a04bc"]
+	    },
+	    "dict_key": {
+		"path": "poppler/Parser.cc",
+		"lineno": 123,
+		"kind": "PCEntry",
+		"field": "pc",
+		"addresses": ["0x2bb3f9", "0x3704d2"]
+	    },
+	    "dict_key_not_name": {
+		"path": "poppler/Parser.cc",
+		"lineno": 112,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getPosEv",
+		"field": "pc",
+		"addresses": ["0x2bb4c8",  "0x3703cb"]
+	    },
+	    "dict_key_other_err": {
+		"path": "poppler/Parser.cc",
+		"lineno": 196,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6ObjectC1E7ObjType",
+		"field": "pc",
+		"addresses": ["0x2bb61f", "0x370aa4"]
+	    },
+	    "dict_value": {
+		"path": "poppler/Parser.cc",
+		"lineno": 127,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Object7dictAddEPKcOS_",
+		"field": "pc",
+		"addresses": ["0x2bb479", "0x370577"]
+	    },
+	    "dict_value_objerr": {
+		"path": "poppler/Parser.cc",
+		"lineno": 130,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZNK6Object5isEOFEv",
+		"field": "pc",
+		"addresses": ["0x2bb551", "0x3705cc"]
+	    },
+	    "stream_start": {
+		"path": "poppler/Parser.cc",
+		"lineno": 137,
+		"kind": "PCEntry",
+		"field": "pc",
+		"addresses": ["0x2bb579", "0x37062e"]
+	    },
+	    "stream_end": {
+		"path": "poppler/Parser.cc",
+		"lineno": 140,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6ObjectC1EP6Stream",
+		"field": "pc",
+		"addresses": ["0x2bb5db", "0x3706c2"]
+	    },
+	    "stream_end_err": {
+		"path": "poppler/Parser.cc",
+		"lineno": 142,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6ObjectC1E7ObjType",
+		"field": "pc",
+		"addresses": ["0x2bb631", "0x3706db"]
+	    },
+	    "dict_end": {
+		"path": "poppler/Parser.cc",
+		"lineno": 136,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZNK6Object5isCmdEPKc",
+		"field": "pc",
+		"addresses": ["0x2bb56c", "0x370621"]
+	    },
+	    "dict_end_eof": {
+		"path": "poppler/Parser.cc",
+		"lineno": 131,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getPosEv",
+		"field": "pc",
+		"addresses": ["0x2bb5f0", "0x3705df"]
+	    },
+	    "lexergetobj_start": {
+		"function": "_ZN5Lexer6getObjEPKci",
+		"kind": "begin",
+		"addresses": ["0x35a1e4", "0x35a1e4"]
+	    },
+	    "lexergetobjchar_start": {
+		"function": "_ZN5Lexer6getObjEi",
+		"kind": "begin",
+		"addresses": ["0x35b3b0", "0x35b3b0"]
+	    },
+
+	    "new_parser_stream": {
+		"function": "_ZN6ParserC1EP4XRefP6Streamb",
+		"kind": "begin",
+		"addresses": ["0x2ba7a2", "0x36fca2"]
+	    },
+	    "new_parser_obj": {
+		"function": "_ZN6ParserC1EP4XRefP6Objectb",
+		"kind": "begin",
+		"addresses": ["0x2ba85e", "0x36fdb4"]
+	    },
+	    "new_parser_stream_id": {
+		"path": "poppler/Parser.cc",
+		"lineno": 51,
+		"function": "_ZN6ParserC1EP4XRefP6Streamb",
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0xe0"
+	    },
+	    "new_parser_obj_id": {
+		"path": "poppler/Parser.cc",
+		"lineno": 58,
+		"function": "_ZN6ParserC1EP4XRefP6Objectb",
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0xe0"
+	    },
+	    "new_parser_stream_id_2": {
+		"path": "poppler/Parser.cc",
+		"lineno": [51, 48],
+		"function": "_ZN6ParserC1EP4XRefP6Streamb",
+		"kind": "MemEntry",
+		"subtype": ["write", "read"],
+		"offset": ["0xe0", "-0x28"]
+	    },
+	    "new_parser_obj_id_2": {
+		"path": "poppler/Parser.cc",
+		"lineno": [58, 55],
+		"function": "_ZN6ParserC1EP4XRefP6Objectb",
+		"kind": "MemEntry",
+		"subtype": ["write", "read"],
+		"offset": ["0xe0", "-0x28"]
+	    },
+	    "lex_obj_type:0": {
+		"function": "_ZN6ObjectC2Eb",
+		"kind": "begin"
+	    },
+	    "lex_obj_type:1": {
+		"function": "_ZN6ObjectC2Ei",
+		"kind": "begin"
+	    },
+	    "lex_obj_type:2": {
+		"function": "_ZN6ObjectC2Ed",
+		"kind": "begin"
+	    },
+	    "lex_obj_type:3": {
+		"function": "_ZN6ObjectC2EP9GooString",
+		"kind": "begin"
+	    },
+	    "lex_obj_type:4": {
+		"function": "_ZN6ObjectC1E7ObjTypePKc",
+		"kind": "begin"
+	    },
+	    "lex_obj_type:5": {
+		"function": "_ZN6ObjectC1E7ObjType",
+		"kind": "begin"
+	    },
+	    "lex_obj_type:6": {
+		"function": "_ZN6ObjectC1EP5Array",
+		"kind": "begin"
+	    },
+	    "lex_obj_type:7": {
+		"function": "_ZN6ObjectC2EP4Dict",
+		"kind": "begin"
+	    },
+	    "lex_obj_type:8": {
+		"function": "_ZN6ObjectC1EP6Stream",
+		"kind": "begin"
+	    },
+	    "lex_obj_type:9": {
+		"function": "_ZN6ObjectC2E3Ref",
+		"kind": "begin"
+	    },
+	    "lex_obj_type:10": {
+		"function": "_ZN6ObjectC1E7ObjTypePKc",
+		"kind": "begin"
+	    },
+	    "lex_obj_type:11": {
+		"function": "_ZN6ObjectC1E7ObjType",
+		"kind": "begin"
+	    },
+	    "lex_obj_type:12": {
+		"function": "_ZN6ObjectC1E7ObjType",
+		"kind": "begin"
+	    },
+	    "lex_obj_type:13": {
+		"function": "_ZN6ObjectC2Ev",
+		"kind": "begin"
+	    },
+	    "lex_obj_type:14": {
+		"function": "_ZN6ObjectC2Ex",
+		"kind": "begin"
+	    },
+	    "lex_obj_type:15": {
+		"function": "_ZN6ObjectC2EOS_",
+		"kind": "begin"
+	    },
+	    "lex_obj_name:0": {
+		"path": "poppler/Lexer.cc",
+		"lineno": [454, 453],
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6ObjectC1E7ObjTypePKc",
+		"field": "pc"
+	    },
+	    "lex_obj_name:1": {
+		"path": "poppler/Lexer.cc",
+		"lineno": [456, 455],
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6ObjectC1E7ObjTypePKc",
+		"field": "pc"
+	    },
+	    "lex_string_val:0": {
+		"path": "poppler/Lexer.cc",
+		"lineno": 390,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": 0,
+		"field": "pc"
+	    },
+	    "lex_string_val:1": {
+		"path": "poppler/Lexer.cc",
+		"lineno": 512,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": 0,
+		"field": "pc"
+	    },
+	    "shift_inlineImg:0": {
+		"path": "poppler/Parser.cc",
+		"lineno": 330,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "0xe0",
+		"addresses": ["0x2ba960",  "0x3710e2"]
+	    },
+	    "shift_inlineImg:1": {
+		"path": "poppler/Parser.cc",
+		"lineno": 351,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "0xe0",
+		"addresses": ["0x2ba960",  "0x3710e2"]
+	    },
+	    "isCmd": {
+		"function": "_ZNK6Object5isCmdEPKc",
+		"kind": "begin"
+	    },
+	    "obj_int_val": {
+		"path": "poppler/Object.h",
+		"lineno": 164,
+		"kind": "MemEntry",
+		"subtype": ["write", "read"],
+		"offset": ["0x8", "-0xc"],
+		"function": "_ZN6ObjectC2Ei"
+	    },
+	    "obj_bool_val": {
+		"path": "poppler/Object.h",
+		"lineno": 162,
+		"kind": "MemEntry",
+		"subtype": ["write", "read"],
+		"offset": ["0x8", "-0xc"],
+		"function": "_ZN6ObjectC2Eb"
+	    },
+	    "obj_int64_val": {
+		"path": "poppler/Object.h",
+		"lineno": 174,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"subtype": ["write", "read"],
+		"offset": ["0x8", "-0x10"],
+		"function": "_ZN6ObjectC2Ex"
+	    },
+	    "obj_double_val": {
+		"path": "poppler/Object.h",
+		"lineno": 168,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"subtype": ["write", "read"],
+		"offset": ["0x8", "-0x10"],
+		"function": "_ZN6ObjectC2Ed"
+	    },
+	    "int_frame_ret:0": {
+		"path": "poppler/Parser.cc",
+		"lineno": 164,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6ObjectC1E3Ref",
+		"field": "pc",
+		"addresses": ["0x2bb6d8", "0x370823"]
+	    },
+	    "int_frame_ret:1": {
+		"path": "poppler/Parser.cc",
+		"lineno": 166,
+		"kind": "CallEntry",
+		"target": "_ZN6ObjectC1Ei",
+		"subtype": "call",
+		"field": "pc"
+	    },
+	    "int_frame_ret:2": {
+		"path": "poppler/Parser.cc",
+		"lineno": 158,
+		"kind": "CallEntry",
+		"target": "_ZN6ObjectC1Ev",
+		"subtype": "call",
+		"field": "pc"
+	    },
+           "xref_fetch": {
+               "path": "poppler/XRef.cc",
+               "lineno": 1131,
+               "kind": "CallEntry",
+               "subtype": "call",
+               "target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+               "field": "pc",
+               "addresses": ["0x2ef8e0", "0x3c6341"]
+           },
+	    "xref_fetch_start": {
+		"function": "_ZN4XRef5fetchEiii",
+		"kind": "begin"
+	    },
+	    "xref_fetch_end": {
+		"function": "_ZN4XRef5fetchEiii",
+		"kind": "end"
+	    },
+	    "xref_fetch_obj:0": {
+		"path": "poppler/XRef.cc",
+		"lineno": 1103,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEi",
+		"field": "pc"
+	    },
+	    "xref_fetch_obj:1": {
+		"path": "poppler/XRef.cc",
+		"lineno": 1104,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEi",
+		"field": "pc"
+	    },
+	    "xref_fetch_obj:2": {
+		"path": "poppler/XRef.cc",
+		"lineno": 1105,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEi",
+		"field": "pc"
+	    },
+	    "xref_fetch_obj:3": {
+               "path": "poppler/XRef.cc",
+               "lineno": 1105,
+               "kind": "CallEntry",
+               "subtype": "call",
+               "target": "_ZN6Parser6getObjEi",
+               "field": "pc"
+           },
+           "xref_fetch_obj:4": {
+		"path": "poppler/XRef.cc",
+		"lineno": 1131,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+
+	    "xref_parse_entry_start": {
+		"function": "_ZN4XRef10parseEntryExP9XRefEntry",
+		"kind": "begin"
+	    },
+	    "xref_parse_entry_end": {
+		"function": "_ZN4XRef10parseEntryExP9XRefEntry",
+		"kind": "end"
+	    },
+	    "xref_parse_entry_obj:0": {
+		"path": "poppler/XRef.cc",
+		"lineno": 1492,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "xref_parse_entry_obj:1": {
+		"path": "poppler/XRef.cc",
+		"lineno": 1493,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "xref_parse_entry_obj:2": {
+		"path": "poppler/XRef.cc",
+		"lineno": 1494,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "xref_obj_stream_start": {
+		"function": "_ZN12ObjectStreamC1EP4XRefii",
+		"kind": "begin"
+	    },
+	    "xref_obj_stream_end": {
+		"function": "_ZN12ObjectStreamC1EP4XRefii",
+		"kind": "end"
+	    },
+	    "xref_obj_new_parser:0": {
+		"path": "poppler/XRef.cc",
+		"lineno": 161,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6ParserC1EP4XRefP6Streamb",
+		"field": "pc"
+	    },
+
+	    "xref_obj_new_parser:1": {
+		"path": "poppler/XRef.cc",
+		"lineno": 200,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6ParserC1EP4XRefP6Streamb",
+		"field": "pc"
+	    },
+	    "xref_obj_getobj:0": {
+		"path": "poppler/XRef.cc",
+		"lineno": 163,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "xref_obj_getobj:1": {
+		"path": "poppler/XRef.cc",
+		"lineno": 164,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "xref_obj_getobj:2": {
+		"path": "poppler/XRef.cc",
+		"lineno": 201,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "xref_read_start": {
+		"function": "_ZN4XRef8readXRefEPxPSt6vectorIxSaIxEEPS1_IiSaIiEE",
+		"kind": "begin"
+	    },
+	    "xref_read_end": {
+		"function": "_ZN4XRef8readXRefEPxPSt6vectorIxSaIxEEPS1_IiSaIiEE",
+		"kind": "end"
+	    },
+	    "xref_read_table_start": {
+		"function": "_ZN4XRef13readXRefTableEP6ParserPxPSt6vectorIxSaIxEEPS3_IiSaIiEE",
+		"kind": "begin"
+	    },
+	    "xref_read_table_end": {
+		"function": "_ZN4XRef13readXRefTableEP6ParserPxPSt6vectorIxSaIxEEPS3_IiSaIiEE",
+		"kind": "end"
+	    },
+	    "xref_read_stream_start": {
+		"function": "_ZN4XRef14readXRefStreamEP6StreamPx",
+		"kind": "begin"
+	    },
+	    "xref_read_stream_end": {
+		"function": "_ZN4XRef14readXRefStreamEP6StreamPx",
+		"kind": "end"
+	    },
+
+	    "xref_read_getobj:0": {
+		"path": "poppler/XRef.cc",
+		"lineno": 465,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "xref_read_getobj:1": {
+		"path": "poppler/XRef.cc",
+		"lineno": 474,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "xref_read_getobj:2": {
+		"path": "poppler/XRef.cc",
+		"lineno": 477,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "xref_read_getobj:3": {
+		"path": "poppler/XRef.cc",
+		"lineno": 480,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "xref_table_getobj:0": {
+		"path": "poppler/XRef.cc",
+		"lineno": 512,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "xref_table_getobj:1": {
+		"path": "poppler/XRef.cc",
+		"lineno": 520,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "xref_table_getobj:2": {
+		"path": "poppler/XRef.cc",
+		"lineno": 535,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "xref_table_getobj:3": {
+		"path": "poppler/XRef.cc",
+		"lineno": 543,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "xref_table_getobj:4": {
+		"path": "poppler/XRef.cc",
+		"lineno": 549,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "xref_table_getobj:5": {
+		"path": "poppler/XRef.cc",
+		"lineno": 585,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "construct_xref_start": {
+		"function": "_ZN4XRef13constructXRefEPbb",
+		"kind": "begin"
+	    },
+	    "construct_xref_end": {
+		"function": "_ZN4XRef13constructXRefEPbb",
+		"kind": "end"
+	    },
+	    "xref_obj_stream_start": {
+		"function": "_ZN12ObjectStreamC1EP4XRefii",
+		"kind": "begin"
+	    },
+	    "xref_obj_stream_end": {
+		"function": "_ZN12ObjectStreamC1EP4XRefii",
+		"kind": "end"
+	    },
+	    "construct_xref_getobj": {
+		"path": "poppler/XRef.cc",
+		"lineno": 871,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "gfx_display_new_parser": {
+		"path": "poppler/Gfx.cc",
+		"lineno": [710, 708],
+		"kind": "CallEntry",
+		"subtype": "call",
+		"field": "pc",
+		"target": "_ZN6ParserC1EP4XRefP6Objectb"
+	    },
+	    "gfx_go_getobj:0": {
+		"path": "poppler/Gfx.cc",
+		"lineno": [727, 725],
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "gfx_go_getobj:1": {
+		"path": "poppler/Gfx.cc",
+		"lineno": [803, 801],
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "gfx_imagestream_getobj:0": {
+		"path": "poppler/Gfx.cc",
+		"lineno": [4922, 4910],
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "gfx_imagestream_getobj:1": {
+		"path": "poppler/Gfx.cc",
+		"lineno": [4927, 4915],
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+
+	    "gfx_imagestream_getobj:2": {
+		"path": "poppler/Gfx.cc",
+		"lineno": [4933, 4921],
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "linearization_start": {
+		"kind": "begin",
+		"function": "_ZN13LinearizationC1EP10BaseStream"
+	    },
+	    "linearization_end": {
+		"kind": "end",
+		"function": "_ZN13LinearizationC1EP10BaseStream"
+	    },
+	    "linearization_getobj:0": {
+		"path": "poppler/Linearization.cc",
+		"lineno": 31,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+
+	    "linearization_getobj:1": {
+		"path": "poppler/Linearization.cc",
+		"lineno": 32,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+
+	    "linearization_getobj:2": {
+		"path": "poppler/Linearization.cc",
+		"lineno": 33,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "linearization_getobj:3": {
+		"path": "poppler/Linearization.cc",
+		"lineno": 34,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "hint_new_parser": {
+		"path": "poppler/Hints.cc",
+		"lineno": 213,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6ParserC1EP4XRefP6Streamb",
+		"field": "pc"
+	    },
+
+	    "hint_getobj:0": {
+		"path": "poppler/Hints.cc",
+		"lineno": 217,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "hint_getobj:1": {
+		"path": "poppler/Hints.cc",
+		"lineno": 218,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "hint_getobj:2": {
+		"path": "poppler/Hints.cc",
+		"lineno": 219,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "hint_getobj:3": {
+		"path": "poppler/Hints.cc",
+		"lineno": 220,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEbPh14CryptAlgorithmiiiib",
+		"field": "pc"
+	    },
+	    "stream_end_shift": {
+		"path": "poppler/Parser.cc",
+		"lineno": 271,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target":"_ZNK6Object5isCmdEPKc",
+		"field": "pc"
+	    },
+	    "make_stream_set_length": {
+		"path": "poppler/Parser.cc",
+		"lineno": 280,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target":"_ZN6Object7dictSetEPKcOS_",
+		"field": "pc"
+	    },
+	    "stream_end_ok": {
+		"path": "poppler/Parser.cc",
+		"lineno": 272,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target":"_ZN6Parser5shiftEi",
+		"field": "pc"
+	    },
+	    "dct_init_cinfo": {
+		"path": "poppler/DCTStream.cc",
+		"lineno": 109,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"function": "_ZN9DCTStream4initEv"
+	    },
+	    "dct_fini_cinfo": {
+		"path": "poppler/DCTStream.cc",
+		"lineno": 78,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"function": "_ZN9DCTStreamD2Ev"
+	    },
+	    "dct_src_mgr_addr": {
+		"path": "poppler/DCTStream.cc",
+		"lineno": 103,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"function": "_ZN9DCTStream4initEv"
+	    },
+	    "xref_construct_endobj": {
+		"path": "poppler/XRef.cc",
+		"lineno": 861,
+		"kind": "PCEntry"
+	    },
+	    "xref_construct_trailer": {
+		"path": "poppler/XRef.cc",
+		"lineno": 868,
+		"kind": "PCEntry"
+	    },
+	    "xref_construct_rootnum": {
+		"path": "poppler/XRef.cc",
+		"lineno": 875,
+		"kind": "CallEntry",
+		"subtype": "return",
+		"function": "_ZNK6Object9getRefNumEv",
+		"field": "target_addr"
+	    },
+	    "xref_construct_rootgen": {
+		"path": "poppler/XRef.cc",
+		"lineno": 876,
+		"kind": "CallEntry",
+		"subtype": "return",
+		"function": "_ZNK6Object9getRefGenEv",
+		"field": "target_addr"
+	    },
+	    "xref_construct_num_val_write": {
+		"path": "poppler/XRef.cc",
+		"lineno": 885,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_construct_gen_val_write": {
+		"path": "poppler/XRef.cc",
+		"lineno": 900,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_construct_obj": {
+		"path": "poppler/XRef.cc",
+		"lineno": 914,
+		"kind": "PCEntry"
+	    },
+	    "xref_construct_obj_num_too_big": {
+		"path": "poppler/XRef.cc",
+		"lineno": 916,
+		"kind": "PCEntry"
+	    },
+	    "xref_construct_obj_bad_obj_num": {
+		"path": "poppler/XRef.cc",
+		"lineno": 921,
+		"kind": "PCEntry"
+	    },
+	    "xref_construct_obj_cannot_resize": {
+		"path": "poppler/XRef.cc",
+		"lineno": 925,
+		"kind": "PCEntry"
+	    },
+	    "xref_construct_obj_add_entry": {
+		"path": "poppler/XRef.cc",
+		"lineno": 931,
+		"kind": "PCEntry"
+	    },
+	    "xref_construct_obj_entry_offset": {
+		"path": "poppler/XRef.cc",
+		"lineno": 931,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_construct_endstream": {
+		"path": "poppler/XRef.cc",
+		"lineno": 944,
+		"kind": "PCEntry"
+	    },
+	    "xref_construct_endstream_pos": {
+		"path": "poppler/XRef.cc",
+		"lineno": 957,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": 0
+	    },
+	    "lexer_xref_id:0": {
+		"path": "poppler/Lexer.cc",
+		"lineno": 70,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "lexer_xref_id:1": {
+		"path": "poppler/Lexer.cc",
+		"lineno": 82,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "construct_xref_id": {
+		"path": "poppler/XRef.cc",
+		"lineno": 831,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "new_xref_id": {
+		"path": "poppler/XRef.cc",
+		"lineno": 232,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_stm_section_offset:0": {
+		"path": "poppler/XRef.cc",
+		"lineno": 790,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_stm_section_offset:1": {
+		"path": "poppler/XRef.cc",
+		"lineno": 795,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_stm_section_offset:2": {
+		"path": "poppler/XRef.cc",
+		"lineno": 800,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_stm_section_gen:0": {
+		"path": "poppler/XRef.cc",
+		"lineno": 791,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_stm_section_gen:1": {
+		"path": "poppler/XRef.cc",
+		"lineno": 796,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_stm_section_gen:2": {
+		"path": "poppler/XRef.cc",
+		"lineno": 801,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_stm_section_idx": {
+		"path": "poppler/XRef.cc",
+		"lineno": 757,
+		"kind": "PCEntry"
+	    },
+	    "xref_stm_section_idx2": {
+		"path": "poppler/XRef.cc",
+		"lineno": 756,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_xref_fetch_ref_num": {
+		"path": "poppler/XRef.cc",
+		"lineno": 1075,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "-0x24"
+	    },
+	    "xref_xref_fetch_ref_gen": {
+		"path": "poppler/XRef.cc",
+		"lineno": 1075,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "-0x28"
+	    },
+	    "xref_xref_fetch_ref_num1": {
+		"path": "poppler/XRef.cc",
+		"lineno": 1078,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "-0x194"
+	    },
+	    "xref_xref_fetch_ref_gen1": {
+		"path": "poppler/XRef.cc",
+		"lineno": 1078,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "-0x198"
+	    },
+	    "obj_construct_id:0": {
+		"path": "poppler/Object.h",
+		"lineno": 158,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:1": {
+		"path": "poppler/Object.h",
+		"lineno": 162,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:2": {
+		"path": "poppler/Object.h",
+		"lineno": 164,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:3": {
+		"path": "poppler/Object.h",
+		"lineno": 166,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:4": {
+		"path": "poppler/Object.h",
+		"lineno": 168,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:5": {
+		"path": "poppler/Object.h",
+		"lineno": 170,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:6": {
+		"path": "poppler/Object.h",
+		"lineno": 172,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:7": {
+		"path": "poppler/Object.h",
+		"lineno": 174,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:8": {
+		"path": "poppler/Object.h",
+		"lineno": 176,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+
+	    "obj_construct_id:9": {
+		"path": "poppler/Object.h",
+		"lineno": 178,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:10": {
+		"path": "poppler/Object.h",
+		"lineno": 180,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:11": {
+		"path": "poppler/Object.h",
+		"lineno": 182,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_free_id": {
+		"path": "poppler/Object.h",
+		"lineno": 159,
+		"kind": "MemEntry",
+		"subtype": "read"
+	    },
+	    "gfx_save_arg": {
+		"path": "poppler/Gfx.cc",
+		"lineno": [790, 788],
+		"kind": "PCEntry"
+	    },
+	    "gfx_skip_arg": {
+		"path": "poppler/Gfx.cc",
+		"lineno": [793, 791],
+		"kind": "PCEntry"
+	    },
+	    "gfx_leftover_args": {
+		"path": "poppler/Gfx.cc",
+		"lineno": [808, 806],
+		"kind": "PCEntry"
+	    },
+	    "gfx_update_display:0": {
+		"path": "poppler/Gfx.cc",
+		"lineno": [824, 822],
+		"kind": "PCEntry"
+	    },
+	    "gfx_update_display:1": {
+		"path": "poppler/Gfx.cc",
+		"lineno": [765, 763],
+		"kind": "PCEntry"
+	    },
+	    "gfx_command_aborted": {
+		"path": "poppler/Gfx.cc",
+		"lineno": [774, 772],
+		"kind": "PCEntry"
+	    }
+
+	}
+    }
+}

@@ -1,0 +1,212 @@
+{
+    "group_id": "libc",
+    "primary": false,
+    "binary_versions": {
+	"docker-ubuntu-20.04": {
+	    "libc-2.31.so": "8a80916ccce792ff6b27e772d94fd65c599e7cf55e79561c29609634ff81e77a"
+	}
+    },
+    "addresses": {
+	"definition_order": ["docker-ubuntu-20.04"],
+	"libc-2.31.so": {
+	    "copystr_fn_read": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"function": "__strcpy_avx2",
+		"path": "../sysdeps/x86_64/multiarch/strcpy-avx2.S",
+		"lineno": 301,
+		"addresses": ["0x18cd9b"]
+	    },
+	    "copystr_skip_read": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"function": "__strcpy_avx2",
+		"path": "../sysdeps/x86_64/multiarch/strcpy-avx2.S",
+		"lineno": 72,
+		"addresses": ["0x18cbc1"]
+	    },
+	    "copystr_alt_read:0": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"function": "__strcpy_avx2",
+		"path": "../sysdeps/x86_64/multiarch/strcpy-avx2.S",
+		"lineno": 592,
+		"addresses": ["0x18cec0"]
+	    },
+	    "copystr_alt_read:1": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"function": "__strcpy_avx2",
+		"path": "../sysdeps/x86_64/multiarch/strcpy-avx2.S",
+		"lineno": 610,
+		"addresses": ["0x18ced0"]
+	    },
+	    "copystr_alt_read:2": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"function": "__strcpy_avx2",
+		"path": "../sysdeps/x86_64/multiarch/strcpy-avx2.S",
+		"lineno": 611,
+		"addresses": ["0x18ced3"]
+	    },
+	    "copystr_alt_read:3": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"function": "__strcpy_avx2",
+		"path": "../sysdeps/x86_64/multiarch/strcpy-avx2.S",
+		"lineno": 577,
+		"addresses": ["0x18ceb0"]
+	    },
+	    "copystr_alt_read:4": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"function": "__strcpy_avx2",
+		"path": "../sysdeps/x86_64/multiarch/strcpy-avx2.S",
+		"lineno": 561,
+		"addresses": ["0x18cea0"]
+	    },
+	    "copystr_alt_read:5": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"function": "__strcpy_avx2",
+		"path": "../sysdeps/x86_64/multiarch/strcpy-avx2.S",
+		"lineno": 546,
+		"addresses": ["0x18ce90"]
+	    },
+	    "copystr_alt_read:6": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"function": "__strcpy_avx2",
+		"path": "../sysdeps/x86_64/multiarch/strcpy-avx2.S",
+		"lineno": 628,
+		"addresses": ["0x18cef0"]
+	    },
+	    "copystr_alt_read:7": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"function": "__strcpy_avx2",
+		"path": "../sysdeps/x86_64/multiarch/strcpy-avx2.S",
+		"lineno": 629,
+		"addresses": ["0x18cef4"]
+	    },
+	    "copystr_alt_read:8": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"function": "__strcpy_avx2",
+		"path": "../sysdeps/x86_64/multiarch/strcpy-avx2.S",
+		"lineno": 594,
+		"addresses": ["0x18cec4"]
+	    },
+	    "strcpy_read_0": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"path": "../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S",
+		"lineno": 239,
+		"function": "__memcpy_avx_unaligned_erms",
+		"addresses": ["0x18e68b"]
+	    },
+	    "strcpy_read_1": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"path": "../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S",
+		"lineno": 238,
+		"function": "__memcpy_avx_unaligned_erms",
+		"addresses": ["0x18e687"]
+	    },
+	    "strcpy_read_alt_0": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"path": "../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S",
+		"lineno": 312,
+		"function": "__memcpy_avx_unaligned_erms",
+		"addresses": ["0x18e6f7"]
+	    },
+	    "strcpy_read_alt_1": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"path": "../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S",
+		"lineno": 313,
+		"function": "__memcpy_avx_unaligned_erms",
+		"addresses": ["0x18e6fc"]
+	    },
+	    "strcpy_read_alt_2_0": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"path": "../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S",
+		"lineno": 305,
+		"function": "__memcpy_avx_unaligned_erms",
+		"addresses": ["0x18e6e6"]
+	    },
+	    "strcpy_read_alt_2_1": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"path": "../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S",
+		"lineno": 304,
+		"function": "__memcpy_avx_unaligned_erms",
+		"addresses": ["0x18e6e2"]
+	    },
+	    "strcpy_read_alt_3_0": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"path": "../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S",
+		"lineno": 366,
+		"function": "__memcpy_avx_unaligned_erms",
+		"addresses": ["0x18e7a7"]
+	    },
+	    "strcpy_read_alt_3_1": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"path": "../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S",
+		"lineno": 365,
+		"function": "__memcpy_avx_unaligned_erms",
+		"addresses": ["0x18e7a3"]
+	    },
+	    "strcpy_read_word_0": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"path": "../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S",
+		"lineno": 319,
+		"function": "__memcpy_avx_unaligned_erms",
+		"addresses": ["0x18e708"]
+	    },
+	    "strcpy_read_word_1": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"path": "../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S",
+		"lineno": 320,
+		"function": "__memcpy_avx_unaligned_erms",
+		"addresses": ["0x18e70c"]
+	    },
+	    "strcpy_read_half_0": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"path": "../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S",
+		"lineno": 326,
+		"function": "__memcpy_avx_unaligned_erms",
+		"addresses": ["0x18e715"]
+	    },
+	    "strcpy_read_half_1": {
+		"kind": "MemEntry",
+		"subtype": "read",
+		"path": "../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S",
+		"lineno": 327,
+		"function": "__memcpy_avx_unaligned_erms",
+		"addresses": ["0x18e71a"]
+	    },
+	    "strcpy_start": {
+		"kind": "PCEntry",
+		"addresses": ["0x18e6c6"],
+		"function": "__memcpy_avx_unaligned_erms",
+		"path": "../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S",
+		"lineno": 277
+	    },
+	    "strcpy_end": {
+		"kind": "PCEntry",
+		"function": "__memcpy_avx_unaligned_erms",
+		"addresses": ["0x18e725"],
+		"path": "../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S",
+		"lineno": 330
+	    }
+	}
+    }
+}

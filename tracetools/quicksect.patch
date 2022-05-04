@@ -1,0 +1,220 @@
+diff -ur quicksect/src/quicksect.pyx quicksect/src/quicksect.pyx
+--- quicksect/src/quicksect.pyx	2019-06-04 12:41:53.000000000 -0400
++++ quicksect/src/quicksect.pyx	2022-03-30 09:21:09.233000000 -0400
+@@ -15,9 +15,9 @@
+     int iabs(int)
+
+ cdef class Interval:
+-    cdef public int start, end
++    cdef public long long start, end
+     cdef public object data
+-    def __init__(self, int start, int end, data=None):
++    def __init__(self, long long start, long long end, data=None):
+         self.start = start
+         self.end = end
+         self.data = data
+@@ -36,7 +36,7 @@
+     def __setstate__(self, kwargs):
+         self.data = kwargs['data']
+
+-cpdef int distance(Interval f1, Interval f2):
++cpdef long long distance(Interval f1, Interval f2):
+     """\
+     Distance between 2 features. The integer result is always positive or zero.
+     If the features overlap or touch, it is zero.
+@@ -67,7 +67,7 @@
+         else:
+             self.root = self.root.insert(interval)
+
+-    def add(self, int start, int end, other=None):
++    def add(self, long long start, long long end, other=None):
+         return self.insert(Interval(start, end, other))
+
+     def find(self, interval):
+@@ -76,19 +76,19 @@
+         else:
+             return self.root.intersect(interval.start, interval.end)
+
+-    def search(self, int start, int end):
++    def search(self, long long start, long long end):
+         if self.root is None:
+             return []
+         else:
+             return self.root.intersect(start, end)
+
+-    def left(self, Interval f, int n=1, int max_dist=25000):
++    def left(self, Interval f, long long n=1, long long max_dist=25000):
+         if self.root is None:
+             return []
+         else:
+             return self.root.left(f, n, max_dist)
+
+-    def right(self, Interval f, int n=1, int max_dist=25000):
++    def right(self, Interval f, long long n=1, long long max_dist=25000):
+         if self.root is None:
+             return []
+         else:
+@@ -120,11 +120,11 @@
+                 break
+
+
+-cdef inline int imax2(int a, int b):
++cdef inline long long imax2(long long a, long long b):
+     if b > a: return b
+     return a
+
+-cdef inline int imax3(int a, int b, int c):
++cdef inline long long imax3(long long a, long long b, long long c):
+     if b > a:
+         if c > b:
+             return c
+@@ -133,7 +133,7 @@
+         return a
+     return c
+
+-cdef inline int imin3(int a, int b, int c):
++cdef inline long long imin3(long long a, long long b, long long c):
+     if b < a:
+         if c < b:
+             return c
+@@ -142,7 +142,7 @@
+         return a
+     return c
+
+-cdef inline int imin2(int a, int b):
++cdef inline long long imin2(long long a, long long b):
+     if b < a: return b
+     return a
+
+@@ -150,9 +150,9 @@
+
+ cdef class IntervalNode:
+     """\
+-    Data structure for performing intersect and neighbor queries on a
++    Data structure for performing intersect and neighbor queries on a
+     set of intervals. Algorithm uses a segment/interval tree to perform
+-    efficient queries.
++    efficient queries.
+
+     Usage
+     =====
+@@ -195,8 +195,8 @@
+     """
+     cdef float priority
+     cdef public Interval interval
+-    cdef public int start, end
+-    cdef int minstop, maxstop, minstart
++    cdef public long long start, end
++    cdef long long minstop, maxstop, minstart
+     cdef IntervalNode cleft, cright, croot
+
+     property left_node:
+@@ -208,7 +208,7 @@
+     property root_node:
+         def __get__(self):
+             return self.croot if self.croot is not EmptyNode else None
+-
++
+
+
+     def __repr__(self):
+@@ -255,7 +255,7 @@
+             # rebalance tree
+             if self.priority < self.cleft.priority:
+                 croot = self.rotate_right()
+-
++
+         croot.set_stops()
+         self.cleft.croot  = croot
+         self.cright.croot = croot
+@@ -276,7 +276,7 @@
+         return croot
+
+     cdef inline void set_stops(IntervalNode self):
+-        if self.cright is not EmptyNode and self.cleft is not EmptyNode:
++        if self.cright is not EmptyNode and self.cleft is not EmptyNode:
+             self.maxstop = imax3(self.end, self.cright.maxstop, self.cleft.maxstop)
+             self.minstop = imin3(self.end, self.cright.minstop, self.cleft.minstop)
+             self.minstart = imin3(self.start, self.cright.minstart, self.cleft.minstart)
+@@ -288,9 +288,9 @@
+             self.maxstop = imax2(self.end, self.cleft.maxstop)
+             self.minstop = imin2(self.end, self.cleft.minstop)
+             self.minstart = imin2(self.start, self.cleft.minstart)
+-
+
+-    def intersect(self, int start, int stop):
++
++    def intersect(self, long long start, long long stop):
+         """
+         given a start and a stop, return a list of features
+         falling within that range
+@@ -300,8 +300,8 @@
+         return results
+
+     find = intersect
+-
+-    cdef void _intersect(IntervalNode self, int start, int stop, list results):
++
++    cdef void _intersect(IntervalNode self, long long start, long long stop, list results):
+         # to have starts, stops be non-inclusive, replace <= with <  and >= with >
+         #if start <= self.end and stop >= self.start: results.append(self.interval)
+         if (not self.end < start) and (not self.start > stop): results.append(self.interval)
+@@ -311,9 +311,9 @@
+         #if self.cright is not EmptyNode and stop >= self.start:
+         if self.cright is not EmptyNode and not self.start > stop:
+             self.cright._intersect(start, stop, results)
+-
+
+-    cdef void _seek_left(IntervalNode self, int position, list results, int n, int max_dist):
++
++    cdef void _seek_left(IntervalNode self, long long position, list results, long long n, long long max_dist):
+         # we know we can bail in these 2 cases.
+         if self.maxstop + max_dist < position: return
+         if self.minstart > position: return
+@@ -333,8 +333,8 @@
+                 self.cleft._seek_left(position, results, n, max_dist)
+
+
+-
+-    cdef void _seek_right(IntervalNode self, int position, list results, int n, int max_dist):
++
++    cdef void _seek_right(IntervalNode self, long long position, list results, long long n, long long max_dist):
+         # we know we can bail in these 2 cases.
+         if self.maxstop < position: return
+         if self.minstart - max_dist > position: return
+@@ -343,7 +343,7 @@
+
+         # the ordering of these 3 blocks makes it so the results are
+         # ordered nearest to farest from the query position
+-        if self.cleft is not EmptyNode:
++        if self.cleft is not EmptyNode:
+                 self.cleft._seek_right(position, results, n, max_dist)
+
+         if -1 < self.start - position < max_dist:
+@@ -352,7 +352,7 @@
+         if self.cright is not EmptyNode:
+                 self.cright._seek_right(position, results, n, max_dist)
+
+-    def neighbors(self, Interval f, int n=1, int max_dist=25000):
++    def neighbors(self, Interval f, long long n=1, long long max_dist=25000):
+         cdef list neighbors = []
+
+         cdef IntervalNode right = self.cright
+@@ -364,7 +364,7 @@
+             left = left.cright
+         return [left, right]
+
+-    cpdef left(self, Interval f, int n=1, int max_dist=25000):
++    cpdef left(self, Interval f, long long n=1, long long max_dist=25000):
+         """find n features with a start > than f.end
+         f: a Interval object
+         n: the number of features to return
+@@ -383,7 +383,7 @@
+         return r[:n]
+
+
+-    cpdef right(self, Interval f, int n=1, int max_dist=25000):
++    cpdef right(self, Interval f, long long n=1, long long max_dist=25000):
+         """find n features with a stop < than f.start
+         f: a Interval object
+         n: the number of features to return

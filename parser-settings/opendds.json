@@ -1,0 +1,39 @@
+{
+    "name": "opendds",
+    "input_type": "dds/jpeg",
+    "timeout": 91,
+    "versions": {
+	"hackathon3": {
+	    "root_dir": "/opt/dds_slideshow",
+	    "bins": {
+		"slideshow": {
+		    "path": "bin/ddsslideshow_test_subscriber_d",
+		    "timeout": 93
+		},
+		"slideshow_setup": {
+		    "path": "run_publisher.sh"
+		}
+	    }
+	}
+
+    },
+    "environ": {
+	"LIBPATH": "{root_dir}/data/dlls:{root_dir}/data/dlls/opendds/gnu:{root_dir}/data/dlls/gstreamer/gnu",
+	"LD_LIBRARY_PATH": "{root_dir}:/usr:/usr/lib64:{root_dir}/data/dlls:{root_dir}/data/dlls/opendds/gnu:{root_dir}/data/dlls/gstreamer/gnu:{root_dir}/data/dlls/gstreamer/gnu/gstreamer-1.0",
+	"NOMAD_META_MR_MT_ENABLE_LOG": "main",
+	"NOMAD_META_MR_MT_DISABLE_LOG": "printf,fprintf,fstat"
+    },
+    "bins": {
+	"slideshow": {
+	    "parser_args": "-DCPSConfigFile {root_dir}/config.ini -DCPSBitLookupDurationMsec 30000 -DCPSLivelinessFactor 1 -DCPSPendingTimeout 10",
+	    "setup_script": "slideshow_setup",
+	    "trace_socket": true,
+	    "trace_file": false
+	},
+	"slideshow_setup": {
+	    "parser_args": "{root_dir}/data/configs/rtps.ini {in_file}",
+	    "background": true,
+	    "is_parser": false
+	}
+    }
+}

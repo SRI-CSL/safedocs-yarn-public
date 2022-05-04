@@ -1,0 +1,165 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Entitlement information and privileges",
+    "type": "object",
+    "required": ["name", "versions", "bins"],
+    "properties": {
+	"schema_version": {
+	    "type": "string",
+	    "description": "schema version",
+	    "pattern": "^(?:\\d+\\.){1,2}\\d+$"
+	},
+	"input_type": {
+	    "$ref": "#/definitions/word",
+	    "description": "Identifies input file type handled by parser"
+	},
+	"name": {
+	    "$ref": "#/definitions/word",
+	    "description": "Name used to identify parser family"
+	},
+	"timeout": {
+	    "$ref": "#/definitions/timeout",
+	    "description": "Time (in minutes) in which instrumented parser is allowed to run befor being killed"
+	},
+	"versions": {
+	    "description"; "Information on individual versions of parser family",
+	    "type": "object",
+	    "properties": {
+		"version_bins_description": {
+		    "type": "object",
+		    "description": "Description of executables for single parser version",
+		    "$ref": "#/definitions/version_bins_description"
+		}
+	    }
+	},
+	"bins": {
+	    "type": "object",
+	    "description": "Parser binary invocation information for all binaries",
+	    "properties": {
+		"invocation_information": {
+		    "type": "object",
+		    "$ref": "#/definitions/invocation_information"
+		}
+	    }
+	},
+	"environ": {
+	    "$ref": "#/definitions/environ"
+	    "description": "environmental variable to be applied to entire parser family"
+	}
+    },
+    "definitions": {
+	"word": {
+	    "type": "string",
+	    "pattern": "^[-_.\\w]+$"
+	},
+	"timeout": {
+	    "type": "int",
+	    "default": 90,
+	    "minimum": 0,
+	    "description": "Time (in minutes) in which instrumented parser is allowed to run befor being killed"
+	},
+	"environ": {
+	    "type": "object",
+	    "description"; "Environmental variables to set before execution",
+	    "properties": {
+		"value": {"type": "string"}
+	    },
+	    "required": ["value"]
+	},
+	"word": {
+	    "type": "string",
+	    "pattern": "^[-_.\\w]+$"
+	},
+	"bin_path": {
+	    "type": "object",
+	    "required": ["path"],
+	    "additionalProperties": false,
+	    "properties": {
+		"timeout": { "$ref": "#/definitions/timeout" },
+		"path": {
+		    "type": "string",
+		    "description": "Relative path from parser version's root to executable"
+		},
+		"environ": { "$ref": "#/definitions/environ" }
+	    }
+	},
+	"version_bins_description": {
+	    "type": "object",
+	    "additionalProperties": false,
+	    "properties": {
+		"root_dir": {
+		    "type": "string",
+		    "description": "Absolute path from which all binary paths for parser version are calculated",
+		    "default": "/"
+		},
+		"src": {
+		    "type": "string",
+		    "description": "Absolute path to source root. Any analyses that rely on source code debugging information will locate source code relative to this root diretory"
+		},
+		"bins": {
+		    "type": "object",
+		    "description": "Name of an relative path to version binary",
+		    "properties": {
+			"bin_path": {
+			    "$ref": "#/definitions/bin_path"
+			}
+		    }
+		},
+		"environ": { "$ref": "#/definitions/environ" },
+		"timeout": {
+		    "$ref": "#/definitions/timeout",
+		    "description": "Default timeout value for this parser version"
+		}
+	    }
+	},
+	"invocation_information": {
+	    "type": "object",
+	    "description": "per-binary invocation information for parser binaries. Name should correspond to a binary_name when walking the 'versions': '<version_name>': 'bins': <binary_name> json object",
+	    "properties": {
+		"command_line": {
+		    "type": "object",
+		    "descriptions": "Command line argument for parser binary",
+		    "properties": {
+			"additionalProperties": false,
+			"environ": { "$ref": "#/definitions/environ" },
+			"parser_args": {
+			    "type": "string",
+			    "descriptions": "Command-line arguments",
+			    "default": "{in_file}"
+			},
+			"delete": {
+			    "type": "files to delete after execution",
+			    "descriptions": "Command-line arguments"
+			    "items": { "type": "string" }
+			},
+			"trace_socket": {
+			    "type": "boolean",
+			    "description": "If true, socket tracing is enabled",
+			    "default": false
+			},
+			"trace_file": {
+			    "type": "boolean",
+			    "description": "If true, socket tracing is enabled",
+			    "default": true
+			},
+			"timeout": { "$ref": "#/definitions/timeout" },
+			"is_parser": {
+			    "type": "boolean",
+			    "description": "Binary is a parser if true",
+			    "default": true
+			},
+			"background": {
+			    "type": "boolean",
+			    "description": "Run executable in background, do not wait for it to finish.  Only valid for non-parser scripts run before the instrumented parser is executed",
+			    "default": false
+			},
+			"setup_script": {
+			    "type": "string",
+			    "description": "Name of setup script (defined in 'bins') to run before instrumented parser is executed, only used if not 'is_parser: false'"
+			}
+		    }
+		}
+	    }
+	}
+    }
+}

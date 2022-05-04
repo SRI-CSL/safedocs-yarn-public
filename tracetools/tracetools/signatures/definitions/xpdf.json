@@ -1,0 +1,631 @@
+{
+    "group_id": "xpdf",
+    "primary": true,
+    "input_type": "pdf",
+    "binary_versions": {
+	"4.01.01": {
+	    "pdftops": "3e1304de654d82f53a86cf204a2a1f2c59134f912de567969a15e700972e288a",
+	    "pdftotext": "52dffb3b42923409215689b336adaeae73d439c3d4418053e166f3b5cbdc979e",
+	    "pdftoppm": "e4cda218c7ce242120887b01442c63d6242ba2c476bb62b6bc865243c700dd72",
+	    "pdffonts": "13d2d2b5debeb1cb27cc35cae27e773a575742a2ea7cd77b0c79393eb4bd0494"
+	}
+    },
+    "addresses": {
+	"definition_order": ["4.01.01"],
+	"build_src_root": ["/opt/xpdf-4.01.01"],
+	"additional_files": ["xpdf/Lexer.cc", "xpdf/Lexer.h", "xpdf/Parser.h", "xpdf/XRef.h", "xpdf/Gfx.h", "xpdf/PDFDoc.h"],
+	"all": {
+	    "xref_fetch_new_parser": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 1083,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6ParserC1EP4XRefP5Lexeri",
+		"field": "pc"
+	    },
+	    "xref_obj_new_parser:0": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 212,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6ParserC1EP4XRefP5Lexeri",
+		"field": "pc"
+	    },
+	    "xref_obj_new_parser:1": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 254,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6ParserC1EP4XRefP5Lexeri",
+		"field": "pc"
+	    },
+	    "xref_read_start": {
+		"function": " _ZN4XRef8readXRefEPlP10XRefPosSet",
+		"kind": "begin"
+	    },
+	    "xref_read_end": {
+		"function": " _ZN4XRef8readXRefEPlP10XRefPosSet",
+		"kind": "end"
+	    },
+	    "xref_read_table_start": {
+		"function": "_ZN4XRef13readXRefTableEPliP10XRefPosSet",
+		"kind": "begin"
+	    },
+	    "xref_read_table_end": {
+		"function": "_ZN4XRef13readXRefTableEPliP10XRefPosSet",
+		"kind": "end"
+	    },
+	    "construct_xref_start": {
+		"function": "_ZN4XRef13constructXRefEv",
+		"kind": "begin"
+	    },
+	    "construct_xref_end": {
+		"function": "_ZN4XRef13constructXRefEv",
+		"kind": "end"
+	    },
+	    "gfx_display_new_parser": {
+		"path": "xpdf/Gfx.cc",
+		"lineno": 640,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"field": "pc",
+		"target": "_ZN6ParserC1EP4XRefP5Lexeri"
+	    },
+	    "linearization_new_parser": {
+		"path": "xpdf/PDFDoc.cc",
+		"lineno": 511,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"field": "pc",
+		"target": "_ZN6ParserC1EP4XRefP5Lexeri"
+	    },
+	    "xref_fetch_obj:0": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 1084,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEP6ObjectiPh14CryptAlgorithmiiii",
+		"field": "pc"
+	    },
+	    "xref_fetch_obj:1": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 1085,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEP6ObjectiPh14CryptAlgorithmiiii",
+		"field": "pc"
+	    },
+	    "xref_fetch_obj:2": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 1086,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEP6ObjectiPh14CryptAlgorithmiiii",
+		"field": "pc"
+	    },
+	    "xref_table_getobj:0": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 896,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Parser6getObjEP6ObjectiPh14CryptAlgorithmiiii",
+		"field": "pc"
+	    },
+	    "parser_obj_id": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 58,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "0x38"
+	    },
+	    "obj_construct_id:0": {
+		"path": "xpdf/Object.h",
+		"lineno": 89,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:1": {
+		"path": "xpdf/Object.h",
+		"lineno": 93,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:2": {
+		"path": "xpdf/Object.h",
+		"lineno": 95,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:3": {
+		"path": "xpdf/Object.h",
+		"lineno": 97,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:4": {
+		"path": "xpdf/Object.h",
+		"lineno": 99,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:5": {
+		"path": "xpdf/Object.h",
+		"lineno": 101,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:6": {
+		"path": "xpdf/Object.h",
+		"lineno": 103,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:7": {
+		"path": "xpdf/Object.cc",
+		"lineno": 55,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:8": {
+		"path": "xpdf/Object.cc",
+		"lineno": 61,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:9": {
+		"path": "xpdf/Object.cc",
+		"lineno": 74,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:10": {
+		"path": "xpdf/Object.h",
+		"lineno": 109,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:11": {
+		"path": "xpdf/Object.h",
+		"lineno": 111,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:12": {
+		"path": "xpdf/Object.h",
+		"lineno": 113,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:13": {
+		"path": "xpdf/Object.h",
+		"lineno": 115,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "obj_construct_id:14": {
+		"path": "xpdf/Object.cc",
+		"lineno": 67,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0"
+	    },
+	    "new_parser_id": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 31,
+		"function": "_ZN6ParserC1EP4XRefP5Lexeri",
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "shift_inlineImg:0": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 251,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "0x38"
+	    },
+	    "shift_inlineImg:1": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 265,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"offset": "0x38"
+	    },
+	    "array_start": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 68,
+		"kind": "PCEntry",
+		"field": "pc"
+	    },
+	    "array_end": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 75,
+		"kind": "CallEntry",
+		"field": "pc",
+		"subtype": "call",
+		"target": "_ZN6Parser5shiftEv"
+	    },
+	    "array_end_eof": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 74,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"field": "pc",
+		"target": "_Z5error13ErrorCategorylPKcz"
+	    },
+	    "int_frame_ret:0": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 149,
+		"kind": "PCEntry",
+		"field": "pc"
+	    },
+	    "int_frame_ref": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 119,
+		"kind": "PCEntry",
+		"field": "pc"
+	    },
+	    "getobj_int": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 116,
+		"kind": "PCEntry",
+		"field": "pc"
+	    },
+	    "simple_obj": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 145,
+		"kind": "PCEntry",
+		"field": "pc"
+	    },
+	    "dict_start_shift": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 79,
+		"kind": "PCEntry",
+		"field": "pc"
+	    },
+	    "dict_start_obj": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 80,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Object8initDictEP4XRef",
+		"field": "pc"
+	    },
+	    "dict_key": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 93,
+		"kind": "PCEntry",
+		"field": "pc"
+	    },
+	    "dict_key_not_name": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 83,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_Z5error13ErrorCategorylPKcz",
+		"field": "pc"
+	    },
+	    "dict_value": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 93,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Object7dictAddEPcPS_",
+		"field": "pc"
+	    },
+	    "dict_value_objerr": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 99,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_Z5error13ErrorCategorylPKcz",
+		"field": "pc"
+	    },
+	    "stream_start": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 103,
+		"kind": "PCEntry",
+		"field": "pc"
+	    },
+	    "stream_end": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 105,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Object10initStreamEP6Stream",
+		"field": "pc"
+	    },
+	    "stream_end_err": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 107,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_ZN6Object4freeEv",
+		"field": "pc"
+	    },
+	    "obj_bool_val": {
+		"path": "xpdf/Object.h",
+		"lineno": 93,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0x8"
+	    },
+	    "obj_int_val": {
+		"path": "xpdf/Object.h",
+		"lineno": 95,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0x8"
+	    },
+	    "obj_double_val": {
+		"path": "xpdf/Object.h",
+		"lineno": 97,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "0x8"
+	    },
+	    "lex_string_val:0": {
+		"path": "xpdf/Lexer.cc",
+		"lineno": 330,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": 0,
+		"field": "pc"
+	    },
+	    "lex_string_val:1": {
+		"path": "xpdf/Lexer.cc",
+		"lineno": 449,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": 0,
+		"field": "pc"
+	    },
+	    "copystr_call:0": {
+		"path": "xpdf/Object.h",
+		"lineno": 101,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target":"copyString",
+		"field": "pc"
+	    },
+	    "copystr_call:1": {
+		"path": "xpdf/Object.h",
+		"lineno": 111,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target":"copyString",
+		"field": "pc"
+	    },
+	    "dict_end": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 102,
+		"kind": "PCEntry",
+		"subtype": "pc",
+		"field": "pc"
+	    },
+	    "dict_end_eof": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 99,
+		"kind": "CallEntry",
+		"subtype": "call",
+		"target": "_Z5error13ErrorCategorylPKcz",
+		"field": "pc"
+	    },
+	    "gfx_save_arg": {
+		"path": "xpdf/Gfx.cc",
+		"lineno": 736,
+		"kind": "PCEntry"
+	    },
+	    "gfx_skip_arg": {
+		"path": "xpdf/Gfx.cc",
+		"lineno": 740,
+		"kind": "PCEntry"
+	    },
+	    "gfx_leftover_args": {
+		"path": "xpdf/Gfx.cc",
+		"lineno": 758,
+		"kind": "PCEntry"
+	    },
+	    "gfx_command_not_aborted": {
+		"path": "xpdf/Gfx.cc",
+		"lineno": 705,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "gfx_command_check_aborted": {
+		"path": "xpdf/Gfx.cc",
+		"lineno": 701,
+		"kind": "PCEntry",
+		"field": "pc"
+	    },
+	    "gfx_command_check_aborted_done": {
+		"path": "xpdf/Gfx.cc",
+		"lineno": 751,
+		"kind": "PCEntry",
+		"field": "pc"
+	    },
+	    "xref_table_trailer": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 629,
+		"kind": "CallEntry",
+		"field": "pc",
+		"subtype": "call"
+	    },
+	    "xref_table_err1": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 678,
+		"kind": "PCEntry",
+		"field": "pc"
+	    },
+	    "xref_table_off": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 581,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_table_gen": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 593,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_table_type:0": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 598,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_table_type:1": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 600,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_table_entry_idx_alt": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 616,
+		"kind": "PCEntry"
+	    },
+	    "xref_table_section_start": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 535,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_table_section_start_alt": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 616,
+		"kind": "MemEntry",
+		"subtype": "read"
+	    },
+	    "xref_table_entry_idx": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 608,
+		"kind": "MemEntry",
+		"subtype": "read",
+		"ins_type": "mov",
+		"offset": "-0x70"
+	    },
+	    "xref_table_add_entry": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 609,
+		"kind": "PCEntry"
+	    },
+	    "xref_stm_idx_start": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 793,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_stm_section_offset:0": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 832,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_stm_section_offset:1": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 837,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_stm_section_offset:2": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 842,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_stm_section_gen:0": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 833,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_stm_section_gen:1": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 838,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_stm_section_gen:2": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 843,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_construct_num_val_write": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 915,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_construct_gen_val_write": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 951,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_construct_obj_entry_offset": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 950,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "construct_xref_id": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 872,
+		"kind": "MemEntry",
+		"subtype": "write"
+	    },
+	    "xref_xref_fetch_ref_num1": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 1031,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "-0x8c"
+	    },
+	    "xref_xref_fetch_ref_gen1": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 1031,
+		"kind": "MemEntry",
+		"subtype": "write",
+		"offset": "-0x90"
+	    },
+	    "xref_fetch_cache:0": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 1048,
+		"kind": "PCEntry"
+	    },
+	    "xref_fetch_cache:1": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 1060,
+		"kind": "PCEntry"
+	    },
+	    "xref_fetch_failed": {
+		"path": "xpdf/XRef.cc",
+		"lineno": 1145,
+		"kind": "PCEntry"
+	    },
+	    "decrypt_str_val": {
+		"path": "xpdf/Parser.cc",
+		"lineno": 137,
+		"kind": "MemEntry",
+		"subtype": "read"
+	    }
+
+	}
+    }
+}

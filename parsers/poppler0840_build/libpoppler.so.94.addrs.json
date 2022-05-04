@@ -1,0 +1,588 @@
+{
+  "addrs": {
+    "array_end": [
+      "0x37028d"
+    ],
+    "array_end_eof": [
+      "0x370262"
+    ],
+    "array_end_recursion_error": [
+      "0x370aa4"
+    ],
+    "array_recurse_pc": [
+      "0x3701f1"
+    ],
+    "array_start": [
+      "0x3700ec"
+    ],
+    "construct_xref_end": [
+      "0x3c58d4"
+    ],
+    "construct_xref_getobj": [
+      "0x3c50cc"
+    ],
+    "construct_xref_id": [
+      "0x3c4e1b"
+    ],
+    "construct_xref_start": [
+      "0x3c4d9e"
+    ],
+    "copystr_call": [
+      "0x2a04bc"
+    ],
+    "dct_fini_cinfo": [
+      "0x45df46"
+    ],
+    "dct_init_cinfo": [
+      "0x45e128"
+    ],
+    "dct_src_mgr_addr": [
+      "0x45e0d1"
+    ],
+    "dict_end": [
+      "0x370621"
+    ],
+    "dict_end_eof": [
+      "0x3705df"
+    ],
+    "dict_key": [
+      "0x3704d2"
+    ],
+    "dict_key_not_name": [
+      "0x3703cb"
+    ],
+    "dict_key_other_err": [
+      "0x370aa4"
+    ],
+    "dict_recurse_pc": [
+      "0x370513"
+    ],
+    "dict_start_obj": [
+      "0x37031f"
+    ],
+    "dict_start_shift": [
+      "0x3702e8"
+    ],
+    "dict_value": [
+      "0x370577"
+    ],
+    "dict_value_objerr": [
+      "0x3705cc"
+    ],
+    "getint_call_virtpcs:0": [
+      "0x37072b"
+    ],
+    "getint_call_virtpcs:1": [
+      "0x3707a7"
+    ],
+    "getobj_int": [
+      "0x37072b"
+    ],
+    "getobj_ref": [
+      "0x370823"
+    ],
+    "gfx_build_image_stream_end": [
+      "0x30128c"
+    ],
+    "gfx_build_image_stream_start": [
+      "0x300f42"
+    ],
+    "gfx_command_aborted": [
+      "0x2e970b"
+    ],
+    "gfx_display_new_parser": [
+      "0x2e92bc"
+    ],
+    "gfx_go_end": [
+      "0x2e9a34"
+    ],
+    "gfx_go_getobj:0": [
+      "0x2e93f6"
+    ],
+    "gfx_go_getobj:1": [
+      "0x2e9889"
+    ],
+    "gfx_go_start": [
+      "0x2e932e"
+    ],
+    "gfx_imagestream_getobj:0": [
+      "0x300fc1"
+    ],
+    "gfx_imagestream_getobj:1": [
+      "0x301078"
+    ],
+    "gfx_imagestream_getobj:2": [
+      "0x30112e"
+    ],
+    "gfx_leftover_args": [
+      "0x2e98cd"
+    ],
+    "gfx_save_arg": [
+      "0x2e9792"
+    ],
+    "gfx_skip_arg": [
+      "0x2e97d3"
+    ],
+    "gfx_update_display:0": [
+      "0x2e99ba"
+    ],
+    "gfx_update_display:1": [
+      "0x2e96bf"
+    ],
+    "hint_getobj:0": [
+      "0x346bcd"
+    ],
+    "hint_getobj:1": [
+      "0x346c4d"
+    ],
+    "hint_getobj:2": [
+      "0x346cca"
+    ],
+    "hint_getobj:3": [
+      "0x346dce"
+    ],
+    "hint_new_parser": [
+      "0x346b71"
+    ],
+    "int_frame_ret:0": [
+      "0x370823"
+    ],
+    "int_frame_ret:1": [
+      "0x37083f"
+    ],
+    "int_frame_ret:2": [
+      "0x3707f6"
+    ],
+    "isCmd": [
+      "0x303226"
+    ],
+    "lex_obj_name:0": [
+      "0x35ad64"
+    ],
+    "lex_obj_name:1": [
+      "0x35ad89"
+    ],
+    "lex_obj_type:0": [
+      "0x2a0370"
+    ],
+    "lex_obj_type:1": [
+      "0x2a0396"
+    ],
+    "lex_obj_type:10": [
+      "0x2a0448"
+    ],
+    "lex_obj_type:11": [
+      "0x2a03b8"
+    ],
+    "lex_obj_type:12": [
+      "0x2a03b8"
+    ],
+    "lex_obj_type:13": [
+      "0x2a033e"
+    ],
+    "lex_obj_type:14": [
+      "0x2d327c"
+    ],
+    "lex_obj_type:15": [
+      "0x2a05e2"
+    ],
+    "lex_obj_type:2": [
+      "0x2a03d0"
+    ],
+    "lex_obj_type:3": [
+      "0x2a03f8"
+    ],
+    "lex_obj_type:4": [
+      "0x2a0448"
+    ],
+    "lex_obj_type:5": [
+      "0x2a03b8"
+    ],
+    "lex_obj_type:6": [
+      "0x2a04cc"
+    ],
+    "lex_obj_type:7": [
+      "0x2a051c"
+    ],
+    "lex_obj_type:8": [
+      "0x2a056c"
+    ],
+    "lex_obj_type:9": [
+      "0x2a05bc"
+    ],
+    "lex_string_val:0": [
+      "0x35aa7f"
+    ],
+    "lex_string_val:1": [
+      "0x35b02a"
+    ],
+    "lexer_xref_id:0": [
+      "0x359d00"
+    ],
+    "lexer_xref_id:1": [
+      "0x359e28"
+    ],
+    "lexergetobj1": [
+      "0x3711b8"
+    ],
+    "lexergetobj2": [
+      "0x371317"
+    ],
+    "lexergetobj3": [
+      "0x371356"
+    ],
+    "lexergetobj_inlineimg1": [
+      "0x370005"
+    ],
+    "lexergetobj_inlineimg2": [
+      "0x370049"
+    ],
+    "lexergetobj_start": [
+      "0x35b3b0"
+    ],
+    "lexergetobjchar_start": [
+      "0x35a1e4"
+    ],
+    "linearization_end": [
+      "0x362578"
+    ],
+    "linearization_getobj:0": [
+      "0x362380"
+    ],
+    "linearization_getobj:1": [
+      "0x3623b2"
+    ],
+    "linearization_getobj:2": [
+      "0x3623e4"
+    ],
+    "linearization_getobj:3": [
+      "0x362416"
+    ],
+    "linearization_start": [
+      "0x362286"
+    ],
+    "make_stream_set_length": [
+      "0x370f42"
+    ],
+    "memread_virtpc": [
+      "0x2a0a31"
+    ],
+    "new_parser_obj": [
+      "0x36fdb4"
+    ],
+    "new_parser_obj_id": [
+      "0x36fea5"
+    ],
+    "new_parser_obj_id_2": [
+      "0x36fe17"
+    ],
+    "new_parser_stream": [
+      "0x36fca2"
+    ],
+    "new_parser_stream_id": [
+      "0x36fd93"
+    ],
+    "new_parser_stream_id_2": [
+      "0x36fd05"
+    ],
+    "new_xref_id": [
+      "0x3c282c"
+    ],
+    "obj_bool_val": [
+      "0x2a038b"
+    ],
+    "obj_construct_id:0": [
+      "0x2a034a"
+    ],
+    "obj_construct_id:1": [
+      "0x2a0381"
+    ],
+    "obj_construct_id:10": [
+      "0x2a05a6"
+    ],
+    "obj_construct_id:11": [
+      "0x2a05cc"
+    ],
+    "obj_construct_id:2": [
+      "0x2a03a5"
+    ],
+    "obj_construct_id:3": [
+      "0x2a03ca"
+    ],
+    "obj_construct_id:4": [
+      "0x2a03e1"
+    ],
+    "obj_construct_id:5": [
+      "0x2a0432"
+    ],
+    "obj_construct_id:6": [
+      "0x2a04b3"
+    ],
+    "obj_construct_id:7": [
+      "0x2d328c"
+    ],
+    "obj_construct_id:8": [
+      "0x2a0506"
+    ],
+    "obj_construct_id:9": [
+      "0x2a0556"
+    ],
+    "obj_double_val": [
+      "0x2a03eb"
+    ],
+    "obj_free_id": [
+      "0x2a0360"
+    ],
+    "obj_id_0": [
+      "0x3710e2"
+    ],
+    "obj_id_1": [
+      "0x371220"
+    ],
+    "obj_int64_val": [
+      "0x2d3296"
+    ],
+    "obj_int_val": [
+      "0x2a03af"
+    ],
+    "obj_type": [
+      "0x30323a"
+    ],
+    "obj_type_iscmd:0": [
+      "0x371138"
+    ],
+    "obj_type_iscmd:1": [
+      "0x371276"
+    ],
+    "parse_xref_entry_end": [
+      "0x3c7dae"
+    ],
+    "parse_xref_entry_start": [
+      "0x3c79b4"
+    ],
+    "parser_obj_id": [
+      "0x36ffe0"
+    ],
+    "recursion_error": [
+      "0x3700a0"
+    ],
+    "shift_inlineImg:0": [
+      "0x371189"
+    ],
+    "shift_inlineImg:1": [
+      "0x3712c7"
+    ],
+    "simple_obj": [
+      "0x370a48"
+    ],
+    "stream_end": [
+      "0x3706c2"
+    ],
+    "stream_end_err": [
+      "0x3706db"
+    ],
+    "stream_end_ok": [
+      "0x370e67"
+    ],
+    "stream_end_shift": [
+      "0x370e4f"
+    ],
+    "stream_start": [
+      "0x37062e"
+    ],
+    "unknown_container_pc": [
+      "0x36ff53"
+    ],
+    "xref_check": [
+      "0x3c361f"
+    ],
+    "xref_construct_endobj": [
+      "0x3c4fbe"
+    ],
+    "xref_construct_endstream": [
+      "0x3c56b1"
+    ],
+    "xref_construct_endstream_pos": [
+      "0x3c5800"
+    ],
+    "xref_construct_gen_val_write": [
+      "0x3c538d"
+    ],
+    "xref_construct_num_val_write": [
+      "0x3c524b"
+    ],
+    "xref_construct_obj": [
+      "0x3c54b2"
+    ],
+    "xref_construct_obj_add_entry": [
+      "0x3c55e9"
+    ],
+    "xref_construct_obj_bad_obj_num": [
+      "0x3c5517"
+    ],
+    "xref_construct_obj_cannot_resize": [
+      "0x3c5562"
+    ],
+    "xref_construct_obj_entry_offset": [
+      "0x3c5623"
+    ],
+    "xref_construct_obj_num_too_big": [
+      "0x3c54d4"
+    ],
+    "xref_construct_rootgen": [
+      "0x3c518d"
+    ],
+    "xref_construct_rootnum": [
+      "0x3c5174"
+    ],
+    "xref_construct_trailer": [
+      "0x3c5006"
+    ],
+    "xref_fetch": [
+      "0x3c6341"
+    ],
+    "xref_fetch_end": [
+      "0x3c6658"
+    ],
+    "xref_fetch_obj:0": [
+      "0x3c5fc3"
+    ],
+    "xref_fetch_obj:1": [
+      "0x3c600a"
+    ],
+    "xref_fetch_obj:2": [
+      "0x3c6051"
+    ],
+    "xref_fetch_obj:3": [
+      "0x3c6051"
+    ],
+    "xref_fetch_obj:4": [
+      "0x3c6341"
+    ],
+    "xref_fetch_start": [
+      "0x3c5dc0"
+    ],
+    "xref_obj_getobj:0": [
+      "0x3c213b"
+    ],
+    "xref_obj_getobj:1": [
+      "0x3c218c"
+    ],
+    "xref_obj_getobj:2": [
+      "0x3c258e"
+    ],
+    "xref_obj_new_parser:0": [
+      "0x3c20e9"
+    ],
+    "xref_obj_new_parser:1": [
+      "0x3c255c"
+    ],
+    "xref_obj_stream_end": [
+      "0x3c2687"
+    ],
+    "xref_obj_stream_start": [
+      "0x3c1d02"
+    ],
+    "xref_parse_entry_end": [
+      "0x3c7dae"
+    ],
+    "xref_parse_entry_obj:0": [
+      "0x3c7ae9"
+    ],
+    "xref_parse_entry_obj:1": [
+      "0x3c7b6a"
+    ],
+    "xref_parse_entry_obj:2": [
+      "0x3c7bd8"
+    ],
+    "xref_parse_entry_start": [
+      "0x3c79b4"
+    ],
+    "xref_read_end": [
+      "0x3c38cf"
+    ],
+    "xref_read_getobj:0": [
+      "0x3c361f"
+    ],
+    "xref_read_getobj:1": [
+      "0x3c36d1"
+    ],
+    "xref_read_getobj:2": [
+      "0x3c373b"
+    ],
+    "xref_read_getobj:3": [
+      "0x3c37ac"
+    ],
+    "xref_read_start": [
+      "0x3c34fe"
+    ],
+    "xref_read_stream_end": [
+      "0x3c4927"
+    ],
+    "xref_read_stream_start": [
+      "0x3c4350"
+    ],
+    "xref_read_table_end": [
+      "0x3c4350"
+    ],
+    "xref_read_table_start": [
+      "0x3c38d0"
+    ],
+    "xref_stm_section_gen:0": [
+      "0x3c4c6e"
+    ],
+    "xref_stm_section_gen:1": [
+      "0x3c4ce6"
+    ],
+    "xref_stm_section_gen:2": [
+      "0x3c4d5b"
+    ],
+    "xref_stm_section_idx": [
+      "0x3c4a25"
+    ],
+    "xref_stm_section_idx2": [
+      "0x3c4a11",
+      "0x3c4d8d"
+    ],
+    "xref_stm_section_offset:0": [
+      "0x3c4c48"
+    ],
+    "xref_stm_section_offset:1": [
+      "0x3c4cc0"
+    ],
+    "xref_stm_section_offset:2": [
+      "0x3c4d35"
+    ],
+    "xref_table_getobj:0": [
+      "0x3c395e"
+    ],
+    "xref_table_getobj:1": [
+      "0x3c39f6"
+    ],
+    "xref_table_getobj:2": [
+      "0x3c3b3e"
+    ],
+    "xref_table_getobj:3": [
+      "0x3c3bda"
+    ],
+    "xref_table_getobj:4": [
+      "0x3c3c5b"
+    ],
+    "xref_table_getobj:5": [
+      "0x3c3f53"
+    ],
+    "xref_xref_fetch_ref_gen": [
+      "0x3c5d8d"
+    ],
+    "xref_xref_fetch_ref_gen1": [
+      "0x3c5de2"
+    ],
+    "xref_xref_fetch_ref_num": [
+      "0x3c5d8a"
+    ],
+    "xref_xref_fetch_ref_num1": [
+      "0x3c5ddc"
+    ]
+  },
+  "version": "0.6"
+}

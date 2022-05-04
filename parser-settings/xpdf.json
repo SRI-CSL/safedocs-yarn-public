@@ -1,0 +1,40 @@
+{
+    "name": "xpdf",
+    "version": "0.6",
+    "input_type": "pdf",
+    "versions": {
+	"4.01.01": {
+	    "root_dir": "/opt/xpdf-4.01.01_build",
+	    "bins": {
+		"pdftops": {
+		    "path": "xpdf/pdftops"
+		},
+		"pdftotext": {
+		    "path": "xpdf/pdftotext"
+		},
+		"pdffonts": {
+		    "path": "xpdf/pdffonts"
+		},
+		"pdftoppm": {
+		    "path": "xpdf/pdftoppm"
+		}
+	    }
+	}
+    },
+    "environ": {
+	"LD_LIBRARY_PATH": "{root_dir}",
+	"NOMAD_META_MR_MT_ENABLE_LOG": ",_ZN6Parser6getObjEP6ObjectiPh14CryptAlgorithmiiii,_Z8openFilePKcS0_,mmap,munmap,open,openat,read,readv,pread64,close,munmap,_ZN6ParserC2EP4XRefP6Objectb, _ZN4XRef13constructXRefEv,_ZN4XRefC1EP10BaseStreami,_ZN4XRefC2EP10BaseStreami,_ZN4XRef5fetchEiiP6Objecti,_ZN3Gfx2goEi,_ZN6ParserC2EP4XRefP5Lexeri,_ZN3Gfx2goEi,_ZN4XRef13readXRefTableEPliP10XRefPosSet",
+	"NOMAD_META_MR_MT_DISABLE_LOG": "printf,fprintf,parseArgs,fstat,_ZNSt11unique_lockISt15recursive_mutexED1Ev,pthread_mutex_unlock,pthread_mutex_lock"
+    },
+    "bins": {
+	"pdftops": {
+	    "parser_args": "{in_file} out.ps"
+	},
+	"pdftotext": {
+	    "parser_args": "{in_file} out.txt"
+	},
+	"pdftoppm": {
+	    "parser_args": "{in_file} out"
+	}
+    }
+}
